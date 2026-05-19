@@ -1,0 +1,55 @@
+---
+id: 7f657d1b-2ff9-4491-b640-a175bc12ee4d
+---
+classDiagram
+direction RL
+    namespace People {
+      class Person{
+        <<abstract>>
+        +name : String
+        +age : int
+
+      }
+      class Fan{
+        +name : String
+      }
+      class Trainer{
+        +gym : String
+        +Array~Pokemon~ pokemonTeam
+        +Array~String~ medalsAchieved
+      }
+      class IViewerPermit{
+        <<interface>>
+        +seatNumber : int
+      }
+      class IParticipantBadge{
+        <<interface>>
+        +id : int
+      }
+    }
+    Person <|-- Trainer
+    Person <|-- Fan
+    Trainer "1" *-- "*" Pokemon : has a team of
+    Trainer "1" *-- "1" IParticipantBadge : has a
+    Trainer "1" *-- "1" IViewerPermit : has a
+    Fan "1" *-- "1" IViewerPermit : has a
+
+    namespace PoketMonsters {
+      class IMakeNoise{
+        <<interface>>
+        +makeNoise() : String
+      }
+      
+      class Pokemon{
+        +name : String
+        +Array~String~ type
+        +attackPoints : int
+        +speedPoints : int
+        +size : int
+        +weightInGrams : int
+        +Array~String~ attacks
+        +defencePoints : int
+        +healthPoints : int
+      }
+    }
+    Pokemon ..|> IMakeNoise
