@@ -13,7 +13,7 @@ namespace Controller{
       for (int r = 0; r < tourney._rounds.Count; r++){
         Round round = tourney._rounds[r];
         
-        if (r > 0) {
+        if (r > 0) { // Si no es la primera ronda, se crean nuevos combates con los ganadores de la ronda anterior
           List<Trainer> winners = new List<Trainer>();
           foreach (Match match in tourney._rounds[r - 1]._matches) {
             if (match._winner != null) {
@@ -29,7 +29,7 @@ namespace Controller{
         Console.WriteLine("==================================================");
         Console.WriteLine();
 
-        foreach (Match match in round._matches){
+        foreach (Match match in round._matches){ //Decide si simular la ronda automaticamente o manualmente
           if (isManual)
           {
             Controller.ManualTourney.ManualMatchManager.ManageMatchManual(match);

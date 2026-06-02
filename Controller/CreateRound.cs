@@ -8,6 +8,7 @@ namespace Controller{
   public static class CreateRound{
     
     public static List<Round> CreateRounds(Tourney tourney){
+      //Creacion de rondas pensadas para un torneo de 16 entrenadores
 
       List<Round> rounds = new List<Round>();
       

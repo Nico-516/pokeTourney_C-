@@ -14,6 +14,7 @@ namespace Controller{
       List<Trainer> trainers = round._trainers;
       int matchNumber = 1;
 
+      // Recorremos la lista de entrenadores de 2 en 2 para crear los combates
       for (int i = 0; i < trainers.Count; i += 2){
         Match match = new Match($"Combate {matchNumber}, {trainers[i]._name} VS {trainers[i + 1]._name}", trainers[i], trainers[i + 1]);
         tourneyMatches.Add(match);

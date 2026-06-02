@@ -8,10 +8,10 @@ namespace Controller{
   public static class CreateTourney{
 
     public static Tourney CreateNewTourneyWith16Trainers(string name){
-      Tourney pokemonTourney = new Tourney(name);
-      List<Trainer> dummyTrainers = CreateTrainer.Create16DummyTrainers();
-      pokemonTourney._trainers = dummyTrainers;
-      pokemonTourney._rounds = CreateRound.CreateRounds(pokemonTourney);
+      Tourney pokemonTourney = new Tourney(name); //Creacion del torneo
+      List<Trainer> dummyTrainers = CreateTrainer.Create16DummyTrainers(); //Creacion de 16 entrenadores
+      pokemonTourney._trainers = dummyTrainers; //Asignacion de entrenadores al torneo
+      pokemonTourney._rounds = CreateRound.CreateRounds(pokemonTourney); //Creacion de rondas
       
       Console.WriteLine($"El torneo '{pokemonTourney._name}' fue creado con {pokemonTourney._trainers.Count} entrenadores.");
 
