@@ -10,10 +10,10 @@ namespace Controller{
   public static class ManageMatch{
     
     public static void MatchManager(Match match){
-      Console.WriteLine($"--- Simulating Match: {match._trainer1._name} VS {match._trainer2._name} ---");
+      Console.WriteLine($"--- Iniciando Combate: {match._trainer1._name} VS {match._trainer2._name} ---");
       Trainer winner = SimulateCombat(match._trainer1, match._trainer2);
       match._winner = winner;
-      Console.WriteLine($"Winner: {winner._name}!");
+      Console.WriteLine($"Ganador: {winner._name}!");
       Console.WriteLine();
     }
 
@@ -41,11 +41,11 @@ namespace Controller{
         }
 
         if (p1._healthPoints <= 0){
-          Console.WriteLine($"  [Faint] {trainer1._name}'s {p1._name} has fainted!");
+          Console.WriteLine($"  [K.O.]] {trainer1._name}'s {p1._name} ha sido Derrotado!");
           i++;
         }
         if (p2._healthPoints <= 0){
-          Console.WriteLine($"  [Faint] {trainer2._name}'s {p2._name} has fainted!");
+          Console.WriteLine($"  [K.O.]] {trainer2._name}'s {p2._name} ha sido Derrotado!");
           j++;
         }
       }

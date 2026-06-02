@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using Model;
 using Controller;
 
-namespace ManualFolder
+namespace Controller
 {
   public static class ManualTourneyOrganizer
   {
     public static void CreateAndRunManualTourney()
     {
       Console.WriteLine("==================================================");
-      Console.WriteLine("          CREATE MANUAL TOURNAMENT                ");
+      Console.WriteLine("            CREACIÓN DE TORNEO MANUAL             ");
       Console.WriteLine("==================================================");
       Console.WriteLine();
 
-      string tourneyName = InputValidator.ReadNonEmptyString("Enter Tournament Name: ");
+      string tourneyName = InputValidator.ReadNonEmptyString("Ingrese el nombre del torneo: ");
       Console.WriteLine();
 
       
@@ -26,13 +26,13 @@ namespace ManualFolder
       tourney._rounds = CreateRound.CreateRounds(tourney);
 
       Console.WriteLine("==================================================");
-      Console.WriteLine($"Tourney '{tourney._name}' is ready with 16 trainers!");
-      Console.WriteLine("Press any key to start the automated tournament matches...");
-      Console.ReadKey();
+      Console.WriteLine($"El torneo '{tourney._name}' está listo con 16 entrenadores!");
+      Console.WriteLine("Presiona Enter para comenzar los combates del torneo manual...");
+      Console.ReadLine();
       Console.WriteLine("\n");
 
       
-      ManageTourney.TourneyManager(tourney);
+      ManageTourney.TourneyManager(tourney, isManual: true);
     }
   }
 }

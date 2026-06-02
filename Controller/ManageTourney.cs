@@ -8,12 +8,11 @@ namespace Controller{
   
   public static class ManageTourney{
     
-    public static void TourneyManager(Tourney tourney){
+    public static void TourneyManager(Tourney tourney, bool isManual = false){
       
       for (int r = 0; r < tourney._rounds.Count; r++){
         Round round = tourney._rounds[r];
         
-        // If this is not the first round, populate trainers and matches from previous round's winners
         if (r > 0) {
           List<Trainer> winners = new List<Trainer>();
           foreach (Match match in tourney._rounds[r - 1]._matches) {
@@ -26,20 +25,26 @@ namespace Controller{
         }
 
         Console.WriteLine("==================================================");
-        Console.WriteLine($"ROUND: {round._name}");
+        Console.WriteLine($"RONDA: {round._name}");
         Console.WriteLine("==================================================");
         Console.WriteLine();
 
         foreach (Match match in round._matches){
-          ManageMatch.MatchManager(match);
+          if (isManual)
+          {
+            Controller.ManualTourney.ManualMatchManager.ManageMatchManual(match);
+          }
+          else
+          {
+            ManageMatch.MatchManager(match);
+          }
         }
 
-        // Check if we just completed the final round
         if (r == tourney._rounds.Count - 1 && round._matches.Count > 0) {
           Trainer? champion = round._matches[0]._winner;
           if (champion != null) {
             Console.WriteLine("🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆");
-            Console.WriteLine($"TOURNAMENT CHAMPION: {champion._name} from {champion._region} region!");
+            Console.WriteLine($"CAMPEON DEL TORNEO: {champion._name} de la región {champion._region}!");
             Console.WriteLine("🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆");
             Console.WriteLine();
           }
