@@ -1,10 +1,7 @@
-namespace pokeTourney.Model.Interfaces
+namespace Model.Interfaces
 {
-//Credencial de los entrenadores registrados en el torneo.
-    public interface IParticipantBadge
-    {
-        int Id { get; set; }
-
-        string GetBadgeInfo();
-    }
+  public interface IParticipantBadge
+  {
+    int _id { get; set; }
+  }
 }

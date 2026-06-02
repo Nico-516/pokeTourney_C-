@@ -1,7 +1,7 @@
-namespace pokeTourney.Model.Interfaces
+namespace Model.Interfaces
 {
-    public interface IMakeNoise
-    {
-        string MakeNoise();
-    }
+  public interface IMakeNoise
+  {
+    string MakeNoise();
+  }
 }
