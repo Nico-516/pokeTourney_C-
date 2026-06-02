@@ -3,6 +3,7 @@ using Model.Interfaces;
 using System;
 using System.Collections.Generic;
 using Controller.JsonGetters;
+using View;
 
 namespace Controller{
   
@@ -24,10 +25,7 @@ namespace Controller{
           round._matches = CreateMatches.CreatetourneyMatches(round);
         }
 
-        Console.WriteLine("==================================================");
-        Console.WriteLine($"RONDA: {round._name}");
-        Console.WriteLine("==================================================");
-        Console.WriteLine();
+        RoundView.RenderRoundHeader(round);
 
         foreach (Match match in round._matches){
           if (isManual)
@@ -40,13 +38,12 @@ namespace Controller{
           }
         }
 
+        RoundView.RenderRoundSummary(round);
+
         if (r == tourney._rounds.Count - 1 && round._matches.Count > 0) {
           Trainer? champion = round._matches[0]._winner;
           if (champion != null) {
-            Console.WriteLine("🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆");
-            Console.WriteLine($"CAMPEON DEL TORNEO: {champion._name} de la región {champion._region}!");
-            Console.WriteLine("🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆");
-            Console.WriteLine();
+            RoundView.RenderChampion(tourney);
           }
         }
       }

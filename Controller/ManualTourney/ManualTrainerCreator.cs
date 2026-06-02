@@ -4,6 +4,7 @@ using System.Linq;
 using Model;
 using Controller;
 using Controller.JsonGetters;
+using View;
 
 namespace Controller
 {
@@ -13,28 +14,26 @@ namespace Controller
 
     public static List<Trainer> Create16Trainers(){
       List<Trainer> trainers = new List<Trainer>();
-      
-      Console.WriteLine("==================================================");
-      Console.WriteLine("       CONFIGURACIÓN MANUAL DE ENTRENADORES       ");
-      Console.WriteLine("==================================================");
-      Console.WriteLine();
-      
+
+      TourneyView.RenderTrainerSetupHeader();
+
+
       int manualCount = InputValidator.ReadInteger("¿Cuántos entrenadores deseas crear manualmente? (1-16): ", 1, 16);
       Console.WriteLine();
 
       for (int i = 1; i <= manualCount; i++)
       {
-        Console.WriteLine($"--- Creando entrenador {i} de {manualCount} ---");
+        TourneyView.RenderTrainerCreating(i, manualCount);
         Trainer trainer = CreateSingleTrainer(i);
         trainers.Add(trainer);
-        Console.WriteLine($"El entrenador '{trainer._name}' ha sido creado exitosamente!\n");
-      }
+        TourneyView.RenderTrainerCreated(trainer._name);
+       }
 
       if (manualCount < 16)
       {
         int remaining = 16 - manualCount;
-        Console.WriteLine($"Se están generando automáticamente los {remaining} entrenadores restantes para completar el torneo de 16 entrenadores...");
-        
+        TourneyView.RenderDummiesGenerating(remaining);
+
         List<Trainer> dummyTrainers = GetDummyTrainer.GetDummyTrainersFromJSON();
         List<Gym> gyms = GetGyms.GetGymsFromJSON();
         List<Pokemon> pokemons = GetPokemons.GetPokemonsFromJSON();
@@ -68,7 +67,7 @@ namespace Controller
           trainers.Add(dummy);
           added++;
         }
-        Console.WriteLine("¡Los entrenadores restantes se han generado exitosamente!\n");
+        TourneyView.RenderDummiesGenerated();
       }
 
       return trainers;
