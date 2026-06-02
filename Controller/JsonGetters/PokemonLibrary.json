@@ -1,0 +1,2050 @@
+[
+  {
+    "id": 1,
+    "name": "Bulbasaur",
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "attackPoints": 49,
+    "speedPoints": 45,
+    "sizeCm": 70,
+    "weightGrams": 6900,
+    "attacks": [
+      "Tackle",
+      "Growl",
+      "Vine Whip",
+      "Razor Leaf"
+    ],
+    "defencePoints": 49,
+    "healthPoints": 45,
+    "noise": "Bulba! Bulbasaur!"
+  },
+  {
+    "id": 2,
+    "name": "Ivysaur",
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "attackPoints": 62,
+    "speedPoints": 60,
+    "sizeCm": 100,
+    "weightGrams": 13000,
+    "attacks": [
+      "Tackle",
+      "Vine Whip",
+      "Razor Leaf",
+      "Solar Beam"
+    ],
+    "defencePoints": 63,
+    "healthPoints": 60,
+    "noise": "Ivy! Ivysaur!"
+  },
+  {
+    "id": 3,
+    "name": "Venusaur",
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "attackPoints": 82,
+    "speedPoints": 80,
+    "sizeCm": 200,
+    "weightGrams": 100000,
+    "attacks": [
+      "Razor Leaf",
+      "Sleep Powder",
+      "Solar Beam",
+      "Sludge Bomb"
+    ],
+    "defencePoints": 83,
+    "healthPoints": 80,
+    "noise": "Venu! Venusaur!"
+  },
+  {
+    "id": 4,
+    "name": "Charmander",
+    "type": [
+      "Fire"
+    ],
+    "attackPoints": 52,
+    "speedPoints": 65,
+    "sizeCm": 60,
+    "weightGrams": 8500,
+    "attacks": [
+      "Scratch",
+      "Growl",
+      "Ember",
+      "Flamethrower"
+    ],
+    "defencePoints": 43,
+    "healthPoints": 39,
+    "noise": "Char! Charmander!"
+  },
+  {
+    "id": 5,
+    "name": "Charmeleon",
+    "type": [
+      "Fire"
+    ],
+    "attackPoints": 64,
+    "speedPoints": 80,
+    "sizeCm": 110,
+    "weightGrams": 19000,
+    "attacks": [
+      "Scratch",
+      "Ember",
+      "Flamethrower",
+      "Slash"
+    ],
+    "defencePoints": 58,
+    "healthPoints": 58,
+    "noise": "Char! Charmeleon!"
+  },
+  {
+    "id": 6,
+    "name": "Charizard",
+    "type": [
+      "Fire",
+      "Flying"
+    ],
+    "attackPoints": 84,
+    "speedPoints": 100,
+    "sizeCm": 170,
+    "weightGrams": 90500,
+    "attacks": [
+      "Flamethrower",
+      "Wing Attack",
+      "Slash",
+      "Fire Blast"
+    ],
+    "defencePoints": 78,
+    "healthPoints": 78,
+    "noise": "Zaaard! *Roar*"
+  },
+  {
+    "id": 7,
+    "name": "Squirtle",
+    "type": [
+      "Water"
+    ],
+    "attackPoints": 48,
+    "speedPoints": 43,
+    "sizeCm": 50,
+    "weightGrams": 9000,
+    "attacks": [
+      "Tackle",
+      "Tail Whip",
+      "Water Gun",
+      "Bite"
+    ],
+    "defencePoints": 65,
+    "healthPoints": 44,
+    "noise": "Squirtle, squirtle!"
+  },
+  {
+    "id": 8,
+    "name": "Wartortle",
+    "type": [
+      "Water"
+    ],
+    "attackPoints": 63,
+    "speedPoints": 58,
+    "sizeCm": 100,
+    "weightGrams": 22500,
+    "attacks": [
+      "Water Gun",
+      "Bite",
+      "Rapid Spin",
+      "Hydro Pump"
+    ],
+    "defencePoints": 80,
+    "healthPoints": 59,
+    "noise": "War-tortle!"
+  },
+  {
+    "id": 9,
+    "name": "Blastoise",
+    "type": [
+      "Water"
+    ],
+    "attackPoints": 83,
+    "speedPoints": 78,
+    "sizeCm": 160,
+    "weightGrams": 85500,
+    "attacks": [
+      "Water Gun",
+      "Bite",
+      "Hydro Pump",
+      "Skull Bash"
+    ],
+    "defencePoints": 100,
+    "healthPoints": 79,
+    "noise": "Blas-toise!"
+  },
+  {
+    "id": 10,
+    "name": "Caterpie",
+    "type": [
+      "Bug"
+    ],
+    "attackPoints": 30,
+    "speedPoints": 45,
+    "sizeCm": 30,
+    "weightGrams": 2900,
+    "attacks": [
+      "Tackle",
+      "String Shot",
+      "Snore",
+      "Bug Bite"
+    ],
+    "defencePoints": 35,
+    "healthPoints": 45,
+    "noise": "Caterpie! Cater!"
+  },
+  {
+    "id": 11,
+    "name": "Metapod",
+    "type": [
+      "Bug"
+    ],
+    "attackPoints": 20,
+    "speedPoints": 30,
+    "sizeCm": 70,
+    "weightGrams": 9900,
+    "attacks": [
+      "String Shot",
+      "Harden",
+      "Iron Defense",
+      "Bug Bite"
+    ],
+    "defencePoints": 55,
+    "healthPoints": 50,
+    "noise": "Metapod..."
+  },
+  {
+    "id": 12,
+    "name": "Butterfree",
+    "type": [
+      "Bug",
+      "Flying"
+    ],
+    "attackPoints": 45,
+    "speedPoints": 70,
+    "sizeCm": 110,
+    "weightGrams": 32000,
+    "attacks": [
+      "Gust",
+      "Whirlwind",
+      "Tackle",
+      "Supersonic"
+    ],
+    "defencePoints": 50,
+    "healthPoints": 60,
+    "noise": "Freeee!"
+  },
+  {
+    "id": 13,
+    "name": "Weedle",
+    "type": [
+      "Bug",
+      "Poison"
+    ],
+    "attackPoints": 35,
+    "speedPoints": 50,
+    "sizeCm": 30,
+    "weightGrams": 3200,
+    "attacks": [
+      "Poison Sting",
+      "String Shot",
+      "Bug Bite",
+      "Electroweb"
+    ],
+    "defencePoints": 30,
+    "healthPoints": 40,
+    "noise": "Wee-dle!"
+  },
+  {
+    "id": 14,
+    "name": "Kakuna",
+    "type": [
+      "Bug",
+      "Poison"
+    ],
+    "attackPoints": 25,
+    "speedPoints": 35,
+    "sizeCm": 60,
+    "weightGrams": 10000,
+    "attacks": [
+      "String Shot",
+      "Harden",
+      "Iron Defense",
+      "Bug Bite"
+    ],
+    "defencePoints": 50,
+    "healthPoints": 45,
+    "noise": "Kakuna..."
+  },
+  {
+    "id": 15,
+    "name": "Beedrill",
+    "type": [
+      "Bug",
+      "Poison"
+    ],
+    "attackPoints": 90,
+    "speedPoints": 75,
+    "sizeCm": 100,
+    "weightGrams": 29500,
+    "attacks": [
+      "Fury Attack",
+      "Poison Sting",
+      "Twineedle",
+      "Pin Missile"
+    ],
+    "defencePoints": 40,
+    "healthPoints": 65,
+    "noise": "Beeee-drill!"
+  },
+  {
+    "id": 16,
+    "name": "Pidgey",
+    "type": [
+      "Normal",
+      "Flying"
+    ],
+    "attackPoints": 45,
+    "speedPoints": 56,
+    "sizeCm": 30,
+    "weightGrams": 1800,
+    "attacks": [
+      "Razor Wind",
+      "Gust",
+      "Wing Attack",
+      "Whirlwind"
+    ],
+    "defencePoints": 40,
+    "healthPoints": 40,
+    "noise": "Pidgey! Pidg!"
+  },
+  {
+    "id": 17,
+    "name": "Pidgeotto",
+    "type": [
+      "Normal",
+      "Flying"
+    ],
+    "attackPoints": 60,
+    "speedPoints": 71,
+    "sizeCm": 110,
+    "weightGrams": 30000,
+    "attacks": [
+      "Razor Wind",
+      "Gust",
+      "Wing Attack",
+      "Whirlwind"
+    ],
+    "defencePoints": 55,
+    "healthPoints": 63,
+    "noise": "Pidgeotto!"
+  },
+  {
+    "id": 18,
+    "name": "Pidgeot",
+    "type": [
+      "Normal",
+      "Flying"
+    ],
+    "attackPoints": 80,
+    "speedPoints": 101,
+    "sizeCm": 150,
+    "weightGrams": 39500,
+    "attacks": [
+      "Razor Wind",
+      "Gust",
+      "Wing Attack",
+      "Whirlwind"
+    ],
+    "defencePoints": 75,
+    "healthPoints": 83,
+    "noise": "Pidgeot!"
+  },
+  {
+    "id": 19,
+    "name": "Rattata",
+    "type": [
+      "Normal"
+    ],
+    "attackPoints": 56,
+    "speedPoints": 72,
+    "sizeCm": 30,
+    "weightGrams": 3500,
+    "attacks": [
+      "Tackle",
+      "Take Down",
+      "Double Edge",
+      "Tail Whip"
+    ],
+    "defencePoints": 35,
+    "healthPoints": 30,
+    "noise": "Rattata! Rat!"
+  },
+  {
+    "id": 20,
+    "name": "Raticate",
+    "type": [
+      "Normal"
+    ],
+    "attackPoints": 81,
+    "speedPoints": 97,
+    "sizeCm": 70,
+    "weightGrams": 18500,
+    "attacks": [
+      "Swords Dance",
+      "Tackle",
+      "Take Down",
+      "Double Edge"
+    ],
+    "defencePoints": 60,
+    "healthPoints": 55,
+    "noise": "Raticate! Raaat!"
+  },
+  {
+    "id": 21,
+    "name": "Spearow",
+    "type": [
+      "Normal",
+      "Flying"
+    ],
+    "attackPoints": 60,
+    "speedPoints": 70,
+    "sizeCm": 30,
+    "weightGrams": 2000,
+    "attacks": [
+      "Wing Attack",
+      "Fury Attack",
+      "Take Down",
+      "Leer"
+    ],
+    "defencePoints": 30,
+    "healthPoints": 40,
+    "noise": "Spear-ow!"
+  },
+  {
+    "id": 22,
+    "name": "Fearow",
+    "type": [
+      "Normal",
+      "Flying"
+    ],
+    "attackPoints": 90,
+    "speedPoints": 100,
+    "sizeCm": 120,
+    "weightGrams": 38000,
+    "attacks": [
+      "Wing Attack",
+      "Fury Attack",
+      "Take Down",
+      "Leer"
+    ],
+    "defencePoints": 65,
+    "healthPoints": 65,
+    "noise": "Fear-owww!"
+  },
+  {
+    "id": 23,
+    "name": "Ekans",
+    "type": [
+      "Poison"
+    ],
+    "attackPoints": 60,
+    "speedPoints": 55,
+    "sizeCm": 200,
+    "weightGrams": 6900,
+    "attacks": [
+      "Slam",
+      "Wrap",
+      "Poison Sting",
+      "Leer"
+    ],
+    "defencePoints": 44,
+    "healthPoints": 35,
+    "noise": "Ekanssss!"
+  },
+  {
+    "id": 24,
+    "name": "Arbok",
+    "type": [
+      "Poison"
+    ],
+    "attackPoints": 95,
+    "speedPoints": 80,
+    "sizeCm": 350,
+    "weightGrams": 65000,
+    "attacks": [
+      "Slam",
+      "Wrap",
+      "Poison Sting",
+      "Leer"
+    ],
+    "defencePoints": 69,
+    "healthPoints": 60,
+    "noise": "Charbok-bok-bok!"
+  },
+  {
+    "id": 25,
+    "name": "Pikachu",
+    "type": [
+      "Electric"
+    ],
+    "attackPoints": 55,
+    "speedPoints": 90,
+    "sizeCm": 40,
+    "weightGrams": 6000,
+    "attacks": [
+      "Thunderbolt",
+      "Quick Attack",
+      "Iron Tail",
+      "Thunder Wave"
+    ],
+    "defencePoints": 40,
+    "healthPoints": 35,
+    "noise": "Pika-Pika!"
+  },
+  {
+    "id": 26,
+    "name": "Raichu",
+    "type": [
+      "Electric"
+    ],
+    "attackPoints": 90,
+    "speedPoints": 110,
+    "sizeCm": 80,
+    "weightGrams": 30000,
+    "attacks": [
+      "Thunderbolt",
+      "Quick Attack",
+      "Thunder Wave",
+      "Thunder"
+    ],
+    "defencePoints": 55,
+    "healthPoints": 60,
+    "noise": "Rai-Rai! Chuuu!"
+  },
+  {
+    "id": 27,
+    "name": "Sandshrew",
+    "type": [
+      "Ground"
+    ],
+    "attackPoints": 75,
+    "speedPoints": 40,
+    "sizeCm": 60,
+    "weightGrams": 12000,
+    "attacks": [
+      "Scratch",
+      "Swords Dance",
+      "Sand Attack",
+      "Poison Sting"
+    ],
+    "defencePoints": 85,
+    "healthPoints": 50,
+    "noise": "Sand-shrew!"
+  },
+  {
+    "id": 28,
+    "name": "Sandslash",
+    "type": [
+      "Ground"
+    ],
+    "attackPoints": 100,
+    "speedPoints": 65,
+    "sizeCm": 100,
+    "weightGrams": 29500,
+    "attacks": [
+      "Scratch",
+      "Swords Dance",
+      "Sand Attack",
+      "Poison Sting"
+    ],
+    "defencePoints": 110,
+    "healthPoints": 75,
+    "noise": "Sand-slash!"
+  },
+  {
+    "id": 29,
+    "name": "Nidoran♀",
+    "type": [
+      "Poison"
+    ],
+    "attackPoints": 47,
+    "speedPoints": 41,
+    "sizeCm": 40,
+    "weightGrams": 7000,
+    "attacks": [
+      "Scratch",
+      "Double Kick",
+      "Tackle",
+      "Tail Whip"
+    ],
+    "defencePoints": 52,
+    "healthPoints": 55,
+    "noise": "Nidoran!"
+  },
+  {
+    "id": 30,
+    "name": "Nidorina",
+    "type": [
+      "Poison"
+    ],
+    "attackPoints": 62,
+    "speedPoints": 56,
+    "sizeCm": 80,
+    "weightGrams": 20000,
+    "attacks": [
+      "Scratch",
+      "Double Kick",
+      "Tackle",
+      "Tail Whip"
+    ],
+    "defencePoints": 67,
+    "healthPoints": 70,
+    "noise": "Nidorina!"
+  },
+  {
+    "id": 31,
+    "name": "Nidoqueen",
+    "type": [
+      "Poison",
+      "Ground"
+    ],
+    "attackPoints": 92,
+    "speedPoints": 76,
+    "sizeCm": 130,
+    "weightGrams": 60000,
+    "attacks": [
+      "Scratch",
+      "Double Kick",
+      "Tackle",
+      "Body Slam"
+    ],
+    "defencePoints": 87,
+    "healthPoints": 90,
+    "noise": "Nido-queen!"
+  },
+  {
+    "id": 32,
+    "name": "Nidoran♂",
+    "type": [
+      "Poison"
+    ],
+    "attackPoints": 57,
+    "speedPoints": 50,
+    "sizeCm": 50,
+    "weightGrams": 9000,
+    "attacks": [
+      "Double Kick",
+      "Horn Attack",
+      "Fury Attack",
+      "Horn Drill"
+    ],
+    "defencePoints": 40,
+    "healthPoints": 46,
+    "noise": "Nidoran!"
+  },
+  {
+    "id": 33,
+    "name": "Nidorino",
+    "type": [
+      "Poison"
+    ],
+    "attackPoints": 72,
+    "speedPoints": 65,
+    "sizeCm": 90,
+    "weightGrams": 19500,
+    "attacks": [
+      "Double Kick",
+      "Horn Attack",
+      "Fury Attack",
+      "Horn Drill"
+    ],
+    "defencePoints": 57,
+    "healthPoints": 61,
+    "noise": "Nidorino!"
+  },
+  {
+    "id": 34,
+    "name": "Nidoking",
+    "type": [
+      "Poison",
+      "Ground"
+    ],
+    "attackPoints": 102,
+    "speedPoints": 85,
+    "sizeCm": 140,
+    "weightGrams": 62000,
+    "attacks": [
+      "Double Kick",
+      "Horn Attack",
+      "Fury Attack",
+      "Tackle"
+    ],
+    "defencePoints": 77,
+    "healthPoints": 81,
+    "noise": "Nido-king!"
+  },
+  {
+    "id": 35,
+    "name": "Clefairy",
+    "type": [
+      "Fairy"
+    ],
+    "attackPoints": 45,
+    "speedPoints": 35,
+    "sizeCm": 60,
+    "weightGrams": 7500,
+    "attacks": [
+      "Pound",
+      "Double Slap",
+      "Tackle",
+      "Body Slam"
+    ],
+    "defencePoints": 48,
+    "healthPoints": 70,
+    "noise": "Pip-pip-pi! Clefairy!"
+  },
+  {
+    "id": 36,
+    "name": "Clefable",
+    "type": [
+      "Fairy"
+    ],
+    "attackPoints": 70,
+    "speedPoints": 60,
+    "sizeCm": 130,
+    "weightGrams": 40000,
+    "attacks": [
+      "Pound",
+      "Double Slap",
+      "Tackle",
+      "Double Edge"
+    ],
+    "defencePoints": 73,
+    "healthPoints": 95,
+    "noise": "Clefable-able!"
+  },
+  {
+    "id": 37,
+    "name": "Vulpix",
+    "type": [
+      "Fire"
+    ],
+    "attackPoints": 41,
+    "speedPoints": 65,
+    "sizeCm": 60,
+    "weightGrams": 9900,
+    "attacks": [
+      "Tackle",
+      "Tail Whip",
+      "Roar",
+      "Disable"
+    ],
+    "defencePoints": 40,
+    "healthPoints": 38,
+    "noise": "Vul-pix! Vul!"
+  },
+  {
+    "id": 38,
+    "name": "Ninetales",
+    "type": [
+      "Fire"
+    ],
+    "attackPoints": 76,
+    "speedPoints": 100,
+    "sizeCm": 110,
+    "weightGrams": 19900,
+    "attacks": [
+      "Tackle",
+      "Tail Whip",
+      "Roar",
+      "Disable"
+    ],
+    "defencePoints": 75,
+    "healthPoints": 73,
+    "noise": "Nine-tales!"
+  },
+  {
+    "id": 39,
+    "name": "Jigglypuff",
+    "type": [
+      "Normal",
+      "Fairy"
+    ],
+    "attackPoints": 45,
+    "speedPoints": 20,
+    "sizeCm": 50,
+    "weightGrams": 5500,
+    "attacks": [
+      "Sing",
+      "Pound",
+      "Double Slap",
+      "Body Slam"
+    ],
+    "defencePoints": 20,
+    "healthPoints": 115,
+    "noise": "Jiggly-puff, jiggly..."
+  },
+  {
+    "id": 40,
+    "name": "Wigglytuff",
+    "type": [
+      "Normal",
+      "Fairy"
+    ],
+    "attackPoints": 70,
+    "speedPoints": 45,
+    "sizeCm": 100,
+    "weightGrams": 12000,
+    "attacks": [
+      "Pound",
+      "Double Slap",
+      "Body Slam",
+      "Double Edge"
+    ],
+    "defencePoints": 45,
+    "healthPoints": 140,
+    "noise": "Wiggly-tuff!"
+  },
+  {
+    "id": 41,
+    "name": "Zubat",
+    "type": [
+      "Poison",
+      "Flying"
+    ],
+    "attackPoints": 45,
+    "speedPoints": 55,
+    "sizeCm": 80,
+    "weightGrams": 7500,
+    "attacks": [
+      "Gust",
+      "Wing Attack",
+      "Bite",
+      "Supersonic"
+    ],
+    "defencePoints": 35,
+    "healthPoints": 40,
+    "noise": "Zu-zu-bat!"
+  },
+  {
+    "id": 42,
+    "name": "Golbat",
+    "type": [
+      "Poison",
+      "Flying"
+    ],
+    "attackPoints": 80,
+    "speedPoints": 90,
+    "sizeCm": 160,
+    "weightGrams": 55000,
+    "attacks": [
+      "Gust",
+      "Wing Attack",
+      "Whirlwind",
+      "Bite"
+    ],
+    "defencePoints": 70,
+    "healthPoints": 75,
+    "noise": "Gol-bat!"
+  },
+  {
+    "id": 43,
+    "name": "Oddish",
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "attackPoints": 50,
+    "speedPoints": 30,
+    "sizeCm": 50,
+    "weightGrams": 5400,
+    "attacks": [
+      "Acid",
+      "Absorb",
+      "Mega Drain",
+      "Growth"
+    ],
+    "defencePoints": 55,
+    "healthPoints": 45,
+    "noise": "Od-dish!"
+  },
+  {
+    "id": 44,
+    "name": "Gloom",
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "attackPoints": 65,
+    "speedPoints": 40,
+    "sizeCm": 80,
+    "weightGrams": 8600,
+    "attacks": [
+      "Acid",
+      "Absorb",
+      "Mega Drain",
+      "Growth"
+    ],
+    "defencePoints": 70,
+    "healthPoints": 60,
+    "noise": "Gloom-gloom..."
+  },
+  {
+    "id": 45,
+    "name": "Vileplume",
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "attackPoints": 80,
+    "speedPoints": 50,
+    "sizeCm": 120,
+    "weightGrams": 18600,
+    "attacks": [
+      "Acid",
+      "Absorb",
+      "Mega Drain",
+      "Growth"
+    ],
+    "defencePoints": 85,
+    "healthPoints": 75,
+    "noise": "Vile-plume!"
+  },
+  {
+    "id": 46,
+    "name": "Paras",
+    "type": [
+      "Bug",
+      "Grass"
+    ],
+    "attackPoints": 70,
+    "speedPoints": 25,
+    "sizeCm": 30,
+    "weightGrams": 5400,
+    "attacks": [
+      "Scratch",
+      "Absorb",
+      "Growth",
+      "Poison Powder"
+    ],
+    "defencePoints": 55,
+    "healthPoints": 35,
+    "noise": "Paras! Paras!"
+  },
+  {
+    "id": 47,
+    "name": "Parasect",
+    "type": [
+      "Bug",
+      "Grass"
+    ],
+    "attackPoints": 95,
+    "speedPoints": 30,
+    "sizeCm": 100,
+    "weightGrams": 29500,
+    "attacks": [
+      "Scratch",
+      "Absorb",
+      "Leech Seed",
+      "Growth"
+    ],
+    "defencePoints": 80,
+    "healthPoints": 60,
+    "noise": "Para-sect!"
+  },
+  {
+    "id": 48,
+    "name": "Venonat",
+    "type": [
+      "Bug",
+      "Poison"
+    ],
+    "attackPoints": 55,
+    "speedPoints": 45,
+    "sizeCm": 100,
+    "weightGrams": 30000,
+    "attacks": [
+      "Tackle",
+      "Supersonic",
+      "Disable",
+      "Psybeam"
+    ],
+    "defencePoints": 50,
+    "healthPoints": 60,
+    "noise": "Veno-nat!"
+  },
+  {
+    "id": 49,
+    "name": "Venomoth",
+    "type": [
+      "Bug",
+      "Poison"
+    ],
+    "attackPoints": 65,
+    "speedPoints": 90,
+    "sizeCm": 150,
+    "weightGrams": 12500,
+    "attacks": [
+      "Gust",
+      "Whirlwind",
+      "Tackle",
+      "Supersonic"
+    ],
+    "defencePoints": 60,
+    "healthPoints": 70,
+    "noise": "Veno-moth!"
+  },
+  {
+    "id": 50,
+    "name": "Diglett",
+    "type": [
+      "Ground"
+    ],
+    "attackPoints": 55,
+    "speedPoints": 95,
+    "sizeCm": 20,
+    "weightGrams": 800,
+    "attacks": [
+      "Scratch",
+      "Sand Attack",
+      "Growl",
+      "Earthquake"
+    ],
+    "defencePoints": 25,
+    "healthPoints": 10,
+    "noise": "Diglett-dig, diglett-dig!"
+  },
+  {
+    "id": 51,
+    "name": "Dugtrio",
+    "type": [
+      "Ground"
+    ],
+    "attackPoints": 100,
+    "speedPoints": 120,
+    "sizeCm": 70,
+    "weightGrams": 33300,
+    "attacks": [
+      "Scratch",
+      "Sand Attack",
+      "Growl",
+      "Earthquake"
+    ],
+    "defencePoints": 50,
+    "healthPoints": 35,
+    "noise": "Dugtrio-dugtrio-dugtrio!"
+  },
+  {
+    "id": 52,
+    "name": "Meowth",
+    "type": [
+      "Normal"
+    ],
+    "attackPoints": 45,
+    "speedPoints": 90,
+    "sizeCm": 40,
+    "weightGrams": 4200,
+    "attacks": [
+      "Pay Day",
+      "Scratch",
+      "Bite",
+      "Growl"
+    ],
+    "defencePoints": 35,
+    "healthPoints": 40,
+    "noise": "Meowth, that's right!"
+  },
+  {
+    "id": 53,
+    "name": "Persian",
+    "type": [
+      "Normal"
+    ],
+    "attackPoints": 70,
+    "speedPoints": 115,
+    "sizeCm": 100,
+    "weightGrams": 32000,
+    "attacks": [
+      "Pay Day",
+      "Scratch",
+      "Bite",
+      "Growl"
+    ],
+    "defencePoints": 60,
+    "healthPoints": 65,
+    "noise": "Persian... *Hiss*"
+  },
+  {
+    "id": 54,
+    "name": "Psyduck",
+    "type": [
+      "Water"
+    ],
+    "attackPoints": 52,
+    "speedPoints": 55,
+    "sizeCm": 80,
+    "weightGrams": 19600,
+    "attacks": [
+      "Scratch",
+      "Tail Whip",
+      "Disable",
+      "Water Gun"
+    ],
+    "defencePoints": 48,
+    "healthPoints": 50,
+    "noise": "Psy... duck?"
+  },
+  {
+    "id": 55,
+    "name": "Golduck",
+    "type": [
+      "Water"
+    ],
+    "attackPoints": 82,
+    "speedPoints": 85,
+    "sizeCm": 170,
+    "weightGrams": 76600,
+    "attacks": [
+      "Scratch",
+      "Tail Whip",
+      "Disable",
+      "Water Gun"
+    ],
+    "defencePoints": 78,
+    "healthPoints": 80,
+    "noise": "Gol-duck!"
+  },
+  {
+    "id": 56,
+    "name": "Mankey",
+    "type": [
+      "Fighting"
+    ],
+    "attackPoints": 80,
+    "speedPoints": 70,
+    "sizeCm": 50,
+    "weightGrams": 28000,
+    "attacks": [
+      "Karate Chop",
+      "Scratch",
+      "Thrash",
+      "Leer"
+    ],
+    "defencePoints": 35,
+    "healthPoints": 40,
+    "noise": "Mankey-mank!"
+  },
+  {
+    "id": 57,
+    "name": "Primeape",
+    "type": [
+      "Fighting"
+    ],
+    "attackPoints": 105,
+    "speedPoints": 95,
+    "sizeCm": 100,
+    "weightGrams": 32000,
+    "attacks": [
+      "Karate Chop",
+      "Scratch",
+      "Thrash",
+      "Leer"
+    ],
+    "defencePoints": 60,
+    "healthPoints": 65,
+    "noise": "Prime-ape! *Angry screech*"
+  },
+  {
+    "id": 58,
+    "name": "Growlithe",
+    "type": [
+      "Fire"
+    ],
+    "attackPoints": 70,
+    "speedPoints": 60,
+    "sizeCm": 70,
+    "weightGrams": 19000,
+    "attacks": [
+      "Take Down",
+      "Leer",
+      "Bite",
+      "Roar"
+    ],
+    "defencePoints": 45,
+    "healthPoints": 55,
+    "noise": "Growl! Growlithe!"
+  },
+  {
+    "id": 59,
+    "name": "Arcanine",
+    "type": [
+      "Fire"
+    ],
+    "attackPoints": 110,
+    "speedPoints": 95,
+    "sizeCm": 190,
+    "weightGrams": 155000,
+    "attacks": [
+      "Take Down",
+      "Double Edge",
+      "Leer",
+      "Bite"
+    ],
+    "defencePoints": 80,
+    "healthPoints": 90,
+    "noise": "Arca-nine! *Woof*"
+  },
+  {
+    "id": 60,
+    "name": "Poliwag",
+    "type": [
+      "Water"
+    ],
+    "attackPoints": 50,
+    "speedPoints": 90,
+    "sizeCm": 60,
+    "weightGrams": 12400,
+    "attacks": [
+      "Pound",
+      "Double Slap",
+      "Body Slam",
+      "Double Edge"
+    ],
+    "defencePoints": 40,
+    "healthPoints": 40,
+    "noise": "Poli-wag! Poli!"
+  },
+  {
+    "id": 61,
+    "name": "Poliwhirl",
+    "type": [
+      "Water"
+    ],
+    "attackPoints": 65,
+    "speedPoints": 90,
+    "sizeCm": 100,
+    "weightGrams": 20000,
+    "attacks": [
+      "Pound",
+      "Double Slap",
+      "Body Slam",
+      "Double Edge"
+    ],
+    "defencePoints": 65,
+    "healthPoints": 65,
+    "noise": "Poli-whirl!"
+  },
+  {
+    "id": 62,
+    "name": "Poliwrath",
+    "type": [
+      "Water",
+      "Fighting"
+    ],
+    "attackPoints": 95,
+    "speedPoints": 70,
+    "sizeCm": 130,
+    "weightGrams": 54000,
+    "attacks": [
+      "Pound",
+      "Double Slap",
+      "Body Slam",
+      "Double Edge"
+    ],
+    "defencePoints": 95,
+    "healthPoints": 90,
+    "noise": "Poli-wrath!"
+  },
+  {
+    "id": 63,
+    "name": "Abra",
+    "type": [
+      "Psychic"
+    ],
+    "attackPoints": 20,
+    "speedPoints": 90,
+    "sizeCm": 90,
+    "weightGrams": 19500,
+    "attacks": [
+      "Mega Punch",
+      "Fire Punch",
+      "Ice Punch",
+      "Thunder Punch"
+    ],
+    "defencePoints": 15,
+    "healthPoints": 25,
+    "noise": "Abra-abra!"
+  },
+  {
+    "id": 64,
+    "name": "Kadabra",
+    "type": [
+      "Psychic"
+    ],
+    "attackPoints": 35,
+    "speedPoints": 105,
+    "sizeCm": 130,
+    "weightGrams": 56500,
+    "attacks": [
+      "Disable",
+      "Psybeam",
+      "Confusion",
+      "Psychic"
+    ],
+    "defencePoints": 30,
+    "healthPoints": 40,
+    "noise": "Kadabra!"
+  },
+  {
+    "id": 65,
+    "name": "Alakazam",
+    "type": [
+      "Psychic"
+    ],
+    "attackPoints": 50,
+    "speedPoints": 120,
+    "sizeCm": 150,
+    "weightGrams": 48000,
+    "attacks": [
+      "Disable",
+      "Psybeam",
+      "Confusion",
+      "Psychic"
+    ],
+    "defencePoints": 45,
+    "healthPoints": 55,
+    "noise": "Alakazam!"
+  },
+  {
+    "id": 66,
+    "name": "Machop",
+    "type": [
+      "Fighting"
+    ],
+    "attackPoints": 80,
+    "speedPoints": 35,
+    "sizeCm": 80,
+    "weightGrams": 19500,
+    "attacks": [
+      "Karate Chop",
+      "Tackle",
+      "Double Edge",
+      "Leer"
+    ],
+    "defencePoints": 50,
+    "healthPoints": 70,
+    "noise": "Machop-chop!"
+  },
+  {
+    "id": 67,
+    "name": "Machoke",
+    "type": [
+      "Fighting"
+    ],
+    "attackPoints": 100,
+    "speedPoints": 45,
+    "sizeCm": 150,
+    "weightGrams": 70500,
+    "attacks": [
+      "Karate Chop",
+      "Tackle",
+      "Double Edge",
+      "Leer"
+    ],
+    "defencePoints": 70,
+    "healthPoints": 80,
+    "noise": "Machoke!"
+  },
+  {
+    "id": 68,
+    "name": "Machamp",
+    "type": [
+      "Fighting"
+    ],
+    "attackPoints": 130,
+    "speedPoints": 55,
+    "sizeCm": 160,
+    "weightGrams": 130000,
+    "attacks": [
+      "Karate Chop",
+      "Tackle",
+      "Double Edge",
+      "Leer"
+    ],
+    "defencePoints": 80,
+    "healthPoints": 90,
+    "noise": "Machamp!"
+  },
+  {
+    "id": 69,
+    "name": "Bellsprout",
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "attackPoints": 75,
+    "speedPoints": 40,
+    "sizeCm": 70,
+    "weightGrams": 4000,
+    "attacks": [
+      "Slam",
+      "Vine Whip",
+      "Wrap",
+      "Acid"
+    ],
+    "defencePoints": 35,
+    "healthPoints": 50,
+    "noise": "Bell-sprout!"
+  },
+  {
+    "id": 70,
+    "name": "Weepinbell",
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "attackPoints": 90,
+    "speedPoints": 55,
+    "sizeCm": 100,
+    "weightGrams": 6400,
+    "attacks": [
+      "Slam",
+      "Vine Whip",
+      "Wrap",
+      "Acid"
+    ],
+    "defencePoints": 50,
+    "healthPoints": 65,
+    "noise": "Weepin-bell!"
+  },
+  {
+    "id": 71,
+    "name": "Victreebel",
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "attackPoints": 105,
+    "speedPoints": 70,
+    "sizeCm": 170,
+    "weightGrams": 15500,
+    "attacks": [
+      "Swords Dance",
+      "Slam",
+      "Vine Whip",
+      "Wrap"
+    ],
+    "defencePoints": 65,
+    "healthPoints": 80,
+    "noise": "*Victreebel high-pitched scream*"
+  },
+  {
+    "id": 72,
+    "name": "Tentacool",
+    "type": [
+      "Water",
+      "Poison"
+    ],
+    "attackPoints": 40,
+    "speedPoints": 70,
+    "sizeCm": 90,
+    "weightGrams": 45500,
+    "attacks": [
+      "Wrap",
+      "Poison Sting",
+      "Supersonic",
+      "Acid"
+    ],
+    "defencePoints": 35,
+    "healthPoints": 40,
+    "noise": "Tenta-cool!"
+  },
+  {
+    "id": 73,
+    "name": "Tentacruel",
+    "type": [
+      "Water",
+      "Poison"
+    ],
+    "attackPoints": 70,
+    "speedPoints": 100,
+    "sizeCm": 160,
+    "weightGrams": 55000,
+    "attacks": [
+      "Wrap",
+      "Poison Sting",
+      "Supersonic",
+      "Acid"
+    ],
+    "defencePoints": 65,
+    "healthPoints": 80,
+    "noise": "Tenta-cruel!"
+  },
+  {
+    "id": 74,
+    "name": "Geodude",
+    "type": [
+      "Rock",
+      "Ground"
+    ],
+    "attackPoints": 80,
+    "speedPoints": 20,
+    "sizeCm": 40,
+    "weightGrams": 20000,
+    "attacks": [
+      "Sand Attack",
+      "Tackle",
+      "Take Down",
+      "Double Edge"
+    ],
+    "defencePoints": 100,
+    "healthPoints": 40,
+    "noise": "Geo-dude!"
+  },
+  {
+    "id": 75,
+    "name": "Graveler",
+    "type": [
+      "Rock",
+      "Ground"
+    ],
+    "attackPoints": 95,
+    "speedPoints": 35,
+    "sizeCm": 100,
+    "weightGrams": 105000,
+    "attacks": [
+      "Sand Attack",
+      "Tackle",
+      "Take Down",
+      "Double Edge"
+    ],
+    "defencePoints": 115,
+    "healthPoints": 55,
+    "noise": "Grav-eler!"
+  },
+  {
+    "id": 76,
+    "name": "Golem",
+    "type": [
+      "Rock",
+      "Ground"
+    ],
+    "attackPoints": 120,
+    "speedPoints": 45,
+    "sizeCm": 140,
+    "weightGrams": 300000,
+    "attacks": [
+      "Mega Punch",
+      "Sand Attack",
+      "Tackle",
+      "Take Down"
+    ],
+    "defencePoints": 130,
+    "healthPoints": 80,
+    "noise": "Golem-golem!"
+  },
+  {
+    "id": 77,
+    "name": "Ponyta",
+    "type": [
+      "Fire"
+    ],
+    "attackPoints": 85,
+    "speedPoints": 90,
+    "sizeCm": 100,
+    "weightGrams": 30000,
+    "attacks": [
+      "Stomp",
+      "Double Kick",
+      "Tackle",
+      "Take Down"
+    ],
+    "defencePoints": 55,
+    "healthPoints": 50,
+    "noise": "Pony-ta!"
+  },
+  {
+    "id": 78,
+    "name": "Rapidash",
+    "type": [
+      "Fire"
+    ],
+    "attackPoints": 100,
+    "speedPoints": 105,
+    "sizeCm": 170,
+    "weightGrams": 95000,
+    "attacks": [
+      "Stomp",
+      "Double Kick",
+      "Fury Attack",
+      "Horn Drill"
+    ],
+    "defencePoints": 70,
+    "healthPoints": 65,
+    "noise": "Rapi-dash!"
+  },
+  {
+    "id": 79,
+    "name": "Slowpoke",
+    "type": [
+      "Water",
+      "Psychic"
+    ],
+    "attackPoints": 65,
+    "speedPoints": 15,
+    "sizeCm": 120,
+    "weightGrams": 36000,
+    "attacks": [
+      "Headbutt",
+      "Tackle",
+      "Growl",
+      "Disable"
+    ],
+    "defencePoints": 65,
+    "healthPoints": 90,
+    "noise": "Slow... poke..."
+  },
+  {
+    "id": 80,
+    "name": "Slowbro",
+    "type": [
+      "Water",
+      "Psychic"
+    ],
+    "attackPoints": 75,
+    "speedPoints": 30,
+    "sizeCm": 160,
+    "weightGrams": 78500,
+    "attacks": [
+      "Stomp",
+      "Headbutt",
+      "Tackle",
+      "Growl"
+    ],
+    "defencePoints": 110,
+    "healthPoints": 95,
+    "noise": "Slow... bro..."
+  },
+  {
+    "id": 81,
+    "name": "Magnemite",
+    "type": [
+      "Electric",
+      "Steel"
+    ],
+    "attackPoints": 35,
+    "speedPoints": 45,
+    "sizeCm": 30,
+    "weightGrams": 6000,
+    "attacks": [
+      "Tackle",
+      "Supersonic",
+      "Sonic Boom",
+      "Thunder Shock"
+    ],
+    "defencePoints": 70,
+    "healthPoints": 25,
+    "noise": "Mag-ne-mite!"
+  },
+  {
+    "id": 82,
+    "name": "Magneton",
+    "type": [
+      "Electric",
+      "Steel"
+    ],
+    "attackPoints": 60,
+    "speedPoints": 70,
+    "sizeCm": 100,
+    "weightGrams": 60000,
+    "attacks": [
+      "Tackle",
+      "Supersonic",
+      "Sonic Boom",
+      "Thunder Shock"
+    ],
+    "defencePoints": 95,
+    "healthPoints": 50,
+    "noise": "Mag-ne-ton!"
+  },
+  {
+    "id": 83,
+    "name": "Farfetchd",
+    "type": [
+      "Normal",
+      "Flying"
+    ],
+    "attackPoints": 90,
+    "speedPoints": 60,
+    "sizeCm": 80,
+    "weightGrams": 15000,
+    "attacks": [
+      "Swords Dance",
+      "Cut",
+      "Sand Attack",
+      "Fury Attack"
+    ],
+    "defencePoints": 55,
+    "healthPoints": 52,
+    "noise": "Far-fetch'd!"
+  },
+  {
+    "id": 84,
+    "name": "Doduo",
+    "type": [
+      "Normal",
+      "Flying"
+    ],
+    "attackPoints": 85,
+    "speedPoints": 75,
+    "sizeCm": 140,
+    "weightGrams": 39200,
+    "attacks": [
+      "Swords Dance",
+      "Wing Attack",
+      "Jump Kick",
+      "Fury Attack"
+    ],
+    "defencePoints": 45,
+    "healthPoints": 35,
+    "noise": "Do-duo!"
+  },
+  {
+    "id": 85,
+    "name": "Dodrio",
+    "type": [
+      "Normal",
+      "Flying"
+    ],
+    "attackPoints": 110,
+    "speedPoints": 110,
+    "sizeCm": 180,
+    "weightGrams": 85200,
+    "attacks": [
+      "Swords Dance",
+      "Wing Attack",
+      "Jump Kick",
+      "Fury Attack"
+    ],
+    "defencePoints": 70,
+    "healthPoints": 60,
+    "noise": "Do-drio!"
+  },
+  {
+    "id": 86,
+    "name": "Seel",
+    "type": [
+      "Water"
+    ],
+    "attackPoints": 45,
+    "speedPoints": 45,
+    "sizeCm": 110,
+    "weightGrams": 90000,
+    "attacks": [
+      "Headbutt",
+      "Take Down",
+      "Double Edge",
+      "Growl"
+    ],
+    "defencePoints": 55,
+    "healthPoints": 65,
+    "noise": "Seel! Seel!"
+  },
+  {
+    "id": 87,
+    "name": "Dewgong",
+    "type": [
+      "Water",
+      "Ice"
+    ],
+    "attackPoints": 70,
+    "speedPoints": 70,
+    "sizeCm": 170,
+    "weightGrams": 120000,
+    "attacks": [
+      "Headbutt",
+      "Horn Drill",
+      "Take Down",
+      "Double Edge"
+    ],
+    "defencePoints": 80,
+    "healthPoints": 90,
+    "noise": "Dew-gong!"
+  },
+  {
+    "id": 88,
+    "name": "Grimer",
+    "type": [
+      "Poison"
+    ],
+    "attackPoints": 80,
+    "speedPoints": 25,
+    "sizeCm": 90,
+    "weightGrams": 30000,
+    "attacks": [
+      "Pound",
+      "Disable",
+      "Toxic",
+      "Screech"
+    ],
+    "defencePoints": 50,
+    "healthPoints": 80,
+    "noise": "Grimer-grimer!"
+  },
+  {
+    "id": 89,
+    "name": "Muk",
+    "type": [
+      "Poison"
+    ],
+    "attackPoints": 105,
+    "speedPoints": 50,
+    "sizeCm": 120,
+    "weightGrams": 30000,
+    "attacks": [
+      "Pound",
+      "Disable",
+      "Toxic",
+      "Screech"
+    ],
+    "defencePoints": 75,
+    "healthPoints": 105,
+    "noise": "Muk-muk!"
+  },
+  {
+    "id": 90,
+    "name": "Shellder",
+    "type": [
+      "Water"
+    ],
+    "attackPoints": 65,
+    "speedPoints": 40,
+    "sizeCm": 30,
+    "weightGrams": 4000,
+    "attacks": [
+      "Tackle",
+      "Leer",
+      "Supersonic",
+      "Water Gun"
+    ],
+    "defencePoints": 100,
+    "healthPoints": 30,
+    "noise": "Shell-der!"
+  },
+  {
+    "id": 91,
+    "name": "Cloyster",
+    "type": [
+      "Water",
+      "Ice"
+    ],
+    "attackPoints": 95,
+    "speedPoints": 70,
+    "sizeCm": 150,
+    "weightGrams": 132500,
+    "attacks": [
+      "Tackle",
+      "Twineedle",
+      "Leer",
+      "Supersonic"
+    ],
+    "defencePoints": 180,
+    "healthPoints": 50,
+    "noise": "Cloy-ster!"
+  },
+  {
+    "id": 92,
+    "name": "Gastly",
+    "type": [
+      "Ghost",
+      "Poison"
+    ],
+    "attackPoints": 35,
+    "speedPoints": 80,
+    "sizeCm": 130,
+    "weightGrams": 100,
+    "attacks": [
+      "Toxic",
+      "Hypnosis",
+      "Night Shade",
+      "Confuse Ray"
+    ],
+    "defencePoints": 30,
+    "healthPoints": 30,
+    "noise": "Gast-ly!"
+  },
+  {
+    "id": 93,
+    "name": "Haunter",
+    "type": [
+      "Ghost",
+      "Poison"
+    ],
+    "attackPoints": 50,
+    "speedPoints": 95,
+    "sizeCm": 160,
+    "weightGrams": 100,
+    "attacks": [
+      "Toxic",
+      "Hypnosis",
+      "Night Shade",
+      "Confuse Ray"
+    ],
+    "defencePoints": 45,
+    "healthPoints": 45,
+    "noise": "Haun-ter!"
+  },
+  {
+    "id": 94,
+    "name": "Gengar",
+    "type": [
+      "Ghost",
+      "Poison"
+    ],
+    "attackPoints": 65,
+    "speedPoints": 110,
+    "sizeCm": 150,
+    "weightGrams": 40500,
+    "attacks": [
+      "Shadow Ball",
+      "Sludge Bomb",
+      "Hypnosis",
+      "Dream Eater"
+    ],
+    "defencePoints": 60,
+    "healthPoints": 60,
+    "noise": "Gen-gar!"
+  },
+  {
+    "id": 95,
+    "name": "Onix",
+    "type": [
+      "Rock",
+      "Ground"
+    ],
+    "attackPoints": 45,
+    "speedPoints": 70,
+    "sizeCm": 880,
+    "weightGrams": 210000,
+    "attacks": [
+      "Bind",
+      "Slam",
+      "Tackle",
+      "Double Edge"
+    ],
+    "defencePoints": 160,
+    "healthPoints": 35,
+    "noise": "Ooo-nix!"
+  },
+  {
+    "id": 96,
+    "name": "Drowzee",
+    "type": [
+      "Psychic"
+    ],
+    "attackPoints": 48,
+    "speedPoints": 42,
+    "sizeCm": 100,
+    "weightGrams": 32400,
+    "attacks": [
+      "Pound",
+      "Headbutt",
+      "Disable",
+      "Psybeam"
+    ],
+    "defencePoints": 45,
+    "healthPoints": 60,
+    "noise": "Drow-zee!"
+  },
+  {
+    "id": 97,
+    "name": "Hypno",
+    "type": [
+      "Psychic"
+    ],
+    "attackPoints": 73,
+    "speedPoints": 67,
+    "sizeCm": 160,
+    "weightGrams": 75600,
+    "attacks": [
+      "Pound",
+      "Headbutt",
+      "Disable",
+      "Psybeam"
+    ],
+    "defencePoints": 70,
+    "healthPoints": 85,
+    "noise": "Hyp-no!"
+  },
+  {
+    "id": 98,
+    "name": "Krabby",
+    "type": [
+      "Water"
+    ],
+    "attackPoints": 105,
+    "speedPoints": 50,
+    "sizeCm": 40,
+    "weightGrams": 6500,
+    "attacks": [
+      "Vice Grip",
+      "Guillotine",
+      "Swords Dance",
+      "Slam"
+    ],
+    "defencePoints": 90,
+    "healthPoints": 30,
+    "noise": "Krabby-krabby!"
+  },
+  {
+    "id": 99,
+    "name": "Kingler",
+    "type": [
+      "Water"
+    ],
+    "attackPoints": 130,
+    "speedPoints": 75,
+    "sizeCm": 130,
+    "weightGrams": 60000,
+    "attacks": [
+      "Vice Grip",
+      "Guillotine",
+      "Swords Dance",
+      "Slam"
+    ],
+    "defencePoints": 115,
+    "healthPoints": 55,
+    "noise": "Cookie, cookie! Kingler!"
+  },
+  {
+    "id": 100,
+    "name": "Voltorb",
+    "type": [
+      "Electric"
+    ],
+    "attackPoints": 30,
+    "speedPoints": 100,
+    "sizeCm": 50,
+    "weightGrams": 10400,
+    "attacks": [
+      "Tackle",
+      "Sonic Boom",
+      "Thunder Shock",
+      "Thunderbolt"
+    ],
+    "defencePoints": 50,
+    "healthPoints": 40,
+    "noise": "Volt-orb!"
+  }
+]

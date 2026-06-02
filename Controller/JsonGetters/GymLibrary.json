@@ -1,0 +1,450 @@
+[
+  {
+    "name": "Pewter Gym",
+    "type": "Rock",
+    "region": "Kanto",
+    "leader": "Brock",
+    "city": "Pewter City"
+  },
+  {
+    "name": "Cerulean Gym",
+    "type": "Water",
+    "region": "Kanto",
+    "leader": "Misty",
+    "city": "Cerulean City"
+  },
+  {
+    "name": "Vermilion Gym",
+    "type": "Electric",
+    "region": "Kanto",
+    "leader": "Lt. Surge",
+    "city": "Vermilion City"
+  },
+  {
+    "name": "Celadon Gym",
+    "type": "Grass",
+    "region": "Kanto",
+    "leader": "Erika",
+    "city": "Celadon City"
+  },
+  {
+    "name": "Fuchsia Gym",
+    "type": "Poison",
+    "region": "Kanto",
+    "leader": "Koga",
+    "city": "Fuchsia City"
+  },
+  {
+    "name": "Saffron Gym",
+    "type": "Psychic",
+    "region": "Kanto",
+    "leader": "Sabrina",
+    "city": "Saffron City"
+  },
+  {
+    "name": "Cinnabar Gym",
+    "type": "Fire",
+    "region": "Kanto",
+    "leader": "Blaine",
+    "city": "Cinnabar Island"
+  },
+  {
+    "name": "Viridian Gym",
+    "type": "Ground",
+    "region": "Kanto",
+    "leader": "Giovanni",
+    "city": "Viridian City"
+  },
+  {
+    "name": "Violet Gym",
+    "type": "Flying",
+    "region": "Johto",
+    "leader": "Falkner",
+    "city": "Violet City"
+  },
+  {
+    "name": "Azalea Gym",
+    "type": "Bug",
+    "region": "Johto",
+    "leader": "Bugsy",
+    "city": "Azalea Town"
+  },
+  {
+    "name": "Goldenrod Gym",
+    "type": "Normal",
+    "region": "Johto",
+    "leader": "Whitney",
+    "city": "Goldenrod City"
+  },
+  {
+    "name": "Ecruteak Gym",
+    "type": "Ghost",
+    "region": "Johto",
+    "leader": "Morty",
+    "city": "Ecruteak City"
+  },
+  {
+    "name": "Cianwood Gym",
+    "type": "Fighting",
+    "region": "Johto",
+    "leader": "Chuck",
+    "city": "Cianwood City"
+  },
+  {
+    "name": "Olivine Gym",
+    "type": "Steel",
+    "region": "Johto",
+    "leader": "Jasmine",
+    "city": "Olivine City"
+  },
+  {
+    "name": "Mahogany Gym",
+    "type": "Ice",
+    "region": "Johto",
+    "leader": "Pryce",
+    "city": "Mahogany Town"
+  },
+  {
+    "name": "Blackthorn Gym",
+    "type": "Dragon",
+    "region": "Johto",
+    "leader": "Clair",
+    "city": "Blackthorn City"
+  },
+  {
+    "name": "Rustboro Gym",
+    "type": "Rock",
+    "region": "Hoenn",
+    "leader": "Roxanne",
+    "city": "Rustboro City"
+  },
+  {
+    "name": "Dewford Gym",
+    "type": "Fighting",
+    "region": "Hoenn",
+    "leader": "Brawly",
+    "city": "Dewford Town"
+  },
+  {
+    "name": "Mauville Gym",
+    "type": "Electric",
+    "region": "Hoenn",
+    "leader": "Wattson",
+    "city": "Mauville City"
+  },
+  {
+    "name": "Lavaridge Gym",
+    "type": "Fire",
+    "region": "Hoenn",
+    "leader": "Flannery",
+    "city": "Lavaridge Town"
+  },
+  {
+    "name": "Petalburg Gym",
+    "type": "Normal",
+    "region": "Hoenn",
+    "leader": "Norman",
+    "city": "Petalburg City"
+  },
+  {
+    "name": "Fortree Gym",
+    "type": "Flying",
+    "region": "Hoenn",
+    "leader": "Winona",
+    "city": "Fortree City"
+  },
+  {
+    "name": "Mossdeep Gym",
+    "type": "Psychic",
+    "region": "Hoenn",
+    "leader": "Tate & Liza",
+    "city": "Mossdeep City"
+  },
+  {
+    "name": "Sootopolis Gym",
+    "type": "Water",
+    "region": "Hoenn",
+    "leader": "Wallace",
+    "city": "Sootopolis City"
+  },
+  {
+    "name": "Oreburgh Gym",
+    "type": "Rock",
+    "region": "Sinnoh",
+    "leader": "Roark",
+    "city": "Oreburgh City"
+  },
+  {
+    "name": "Eterna Gym",
+    "type": "Grass",
+    "region": "Sinnoh",
+    "leader": "Gardenia",
+    "city": "Eterna City"
+  },
+  {
+    "name": "Veilstone Gym",
+    "type": "Fighting",
+    "region": "Sinnoh",
+    "leader": "Maylene",
+    "city": "Veilstone City"
+  },
+  {
+    "name": "Pastoria Gym",
+    "type": "Water",
+    "region": "Sinnoh",
+    "leader": "Crasher Wake",
+    "city": "Pastoria City"
+  },
+  {
+    "name": "Hearthome Gym",
+    "type": "Ghost",
+    "region": "Sinnoh",
+    "leader": "Fantina",
+    "city": "Hearthome City"
+  },
+  {
+    "name": "Canalave Gym",
+    "type": "Steel",
+    "region": "Sinnoh",
+    "leader": "Byron",
+    "city": "Canalave City"
+  },
+  {
+    "name": "Snowpoint Gym",
+    "type": "Ice",
+    "region": "Sinnoh",
+    "leader": "Candice",
+    "city": "Snowpoint City"
+  },
+  {
+    "name": "Sunyshore Gym",
+    "type": "Electric",
+    "region": "Sinnoh",
+    "leader": "Volkner",
+    "city": "Sunyshore City"
+  },
+  {
+    "name": "Striaton Gym",
+    "type": "Grass/Fire/Water",
+    "region": "Unova",
+    "leader": "Cilan",
+    "city": "Striaton City"
+  },
+  {
+    "name": "Nacrene Gym",
+    "type": "Normal",
+    "region": "Unova",
+    "leader": "Lenora",
+    "city": "Nacrene City"
+  },
+  {
+    "name": "Castelia Gym",
+    "type": "Bug",
+    "region": "Unova",
+    "leader": "Burgh",
+    "city": "Castelia City"
+  },
+  {
+    "name": "Nimbasa Gym",
+    "type": "Electric",
+    "region": "Unova",
+    "leader": "Elesa",
+    "city": "Nimbasa City"
+  },
+  {
+    "name": "Driftveil Gym",
+    "type": "Ground",
+    "region": "Unova",
+    "leader": "Clay",
+    "city": "Driftveil City"
+  },
+  {
+    "name": "Mistralton Gym",
+    "type": "Flying",
+    "region": "Unova",
+    "leader": "Skyla",
+    "city": "Mistralton City"
+  },
+  {
+    "name": "Opelucid Gym",
+    "type": "Dragon",
+    "region": "Unova",
+    "leader": "Drayden",
+    "city": "Opelucid City"
+  },
+  {
+    "name": "Humilau Gym",
+    "type": "Water",
+    "region": "Unova",
+    "leader": "Marlon",
+    "city": "Humilau City"
+  },
+  {
+    "name": "Santalune Gym",
+    "type": "Bug",
+    "region": "Kalos",
+    "leader": "Viola",
+    "city": "Santalune City"
+  },
+  {
+    "name": "Cyllage Gym",
+    "type": "Rock",
+    "region": "Kalos",
+    "leader": "Grant",
+    "city": "Cyllage City"
+  },
+  {
+    "name": "Shalour Gym",
+    "type": "Fighting",
+    "region": "Kalos",
+    "leader": "Korrina",
+    "city": "Shalour City"
+  },
+  {
+    "name": "Coumarine Gym",
+    "type": "Grass",
+    "region": "Kalos",
+    "leader": "Ramos",
+    "city": "Coumarine City"
+  },
+  {
+    "name": "Lumiose Gym",
+    "type": "Electric",
+    "region": "Kalos",
+    "leader": "Clemont",
+    "city": "Lumiose City"
+  },
+  {
+    "name": "Laverre Gym",
+    "type": "Fairy",
+    "region": "Kalos",
+    "leader": "Valerie",
+    "city": "Laverre City"
+  },
+  {
+    "name": "Anistar Gym",
+    "type": "Psychic",
+    "region": "Kalos",
+    "leader": "Olympia",
+    "city": "Anistar City"
+  },
+  {
+    "name": "Snowbelle Gym",
+    "type": "Ice",
+    "region": "Kalos",
+    "leader": "Wulfric",
+    "city": "Snowbelle City"
+  },
+  {
+    "name": "Turffield Stadium",
+    "type": "Grass",
+    "region": "Galar",
+    "leader": "Milo",
+    "city": "Turffield"
+  },
+  {
+    "name": "Hulbury Stadium",
+    "type": "Water",
+    "region": "Galar",
+    "leader": "Nessa",
+    "city": "Hulbury"
+  },
+  {
+    "name": "Motostoke Stadium",
+    "type": "Fire",
+    "region": "Galar",
+    "leader": "Kabu",
+    "city": "Motostoke"
+  },
+  {
+    "name": "Stow-on-Side Stadium",
+    "type": "Fighting",
+    "region": "Galar",
+    "leader": "Bea",
+    "city": "Stow-on-Side"
+  },
+  {
+    "name": "Ballonlea Stadium",
+    "type": "Fairy",
+    "region": "Galar",
+    "leader": "Opal",
+    "city": "Ballonlea"
+  },
+  {
+    "name": "Circhester Stadium",
+    "type": "Rock",
+    "region": "Galar",
+    "leader": "Gordie",
+    "city": "Circhester"
+  },
+  {
+    "name": "Spikemuth Gym",
+    "type": "Dark",
+    "region": "Galar",
+    "leader": "Piers",
+    "city": "Spikemuth"
+  },
+  {
+    "name": "Hammerlocke Stadium",
+    "type": "Dragon",
+    "region": "Galar",
+    "leader": "Raihan",
+    "city": "Hammerlocke"
+  },
+  {
+    "name": "Cortondo Gym",
+    "type": "Bug",
+    "region": "Paldea",
+    "leader": "Katy",
+    "city": "Cortondo"
+  },
+  {
+    "name": "Artazon Gym",
+    "type": "Grass",
+    "region": "Paldea",
+    "leader": "Brassius",
+    "city": "Artazon"
+  },
+  {
+    "name": "Levincia Gym",
+    "type": "Electric",
+    "region": "Paldea",
+    "leader": "Iono",
+    "city": "Levincia"
+  },
+  {
+    "name": "Cascarrafa Gym",
+    "type": "Water",
+    "region": "Paldea",
+    "leader": "Kofu",
+    "city": "Cascarrafa"
+  },
+  {
+    "name": "Medali Gym",
+    "type": "Normal",
+    "region": "Paldea",
+    "leader": "Larry",
+    "city": "Medali"
+  },
+  {
+    "name": "Montenevera Gym",
+    "type": "Ghost",
+    "region": "Paldea",
+    "leader": "Ryme",
+    "city": "Montenevera"
+  },
+  {
+    "name": "Alfornada Gym",
+    "type": "Psychic",
+    "region": "Paldea",
+    "leader": "Tulip",
+    "city": "Alfornada"
+  },
+  {
+    "name": "Glaseado Gym",
+    "type": "Ice",
+    "region": "Paldea",
+    "leader": "Grusha",
+    "city": "Glaseado"
+  }
+]
