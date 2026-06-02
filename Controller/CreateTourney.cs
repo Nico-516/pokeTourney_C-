@@ -13,7 +13,7 @@ namespace Controller{
       pokemonTourney._trainers = dummyTrainers;
       pokemonTourney._rounds = CreateRound.CreateRounds(pokemonTourney);
       
-      Console.WriteLine($"Tourney '{pokemonTourney._name}' created with {pokemonTourney._trainers.Count} trainers.");
+      Console.WriteLine($"El torneo '{pokemonTourney._name}' fue creado con {pokemonTourney._trainers.Count} entrenadores.");
 
       Test16Trainers(dummyTrainers);
 
@@ -22,11 +22,11 @@ namespace Controller{
 
     public static void Test16Trainers(List<Trainer> dummyTrainerList){
       if (dummyTrainerList == null){
-        Console.WriteLine("No trainers generated.");
+        Console.WriteLine("No se generaron entrenadores.");
         return;
       }
       foreach (Trainer trainer in dummyTrainerList) {
-        Console.WriteLine($"Trainer: {trainer._name}, Id: {trainer._id}, Gym: {trainer._gym?._name ?? "No Gym"}, Pokemon: {string.Join(", ", trainer._pokemonTeam.Select(pokemon => pokemon._name))}");
+        Console.WriteLine($"Entrenador: {trainer._name}, Id: {trainer._id}, Gimnasio: {trainer._gym?._name ?? "Sin Gimnasio"}, Pokemon: {string.Join(", ", trainer._pokemonTeam.Select(pokemon => pokemon._name))}");
       }
     }
   }

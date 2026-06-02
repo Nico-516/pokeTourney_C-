@@ -14,7 +14,7 @@ namespace Controller
         {
           return input.Trim();
         }
-        Console.WriteLine("Error: Input cannot be empty or only spaces. Please try again.\n");
+        Console.WriteLine("Error: El input no puede estar vacío o contener solo espacios. Por favor, intenta de nuevo.\n");
       }
     }
 
@@ -28,7 +28,7 @@ namespace Controller
         {
           return result;
         }
-        Console.WriteLine($"Error: Please enter a valid integer between {min} and {max}.\n");
+        Console.WriteLine($"Error: Ingrese un número válido entre {min} y {max}.\n");
       }
     }
 
@@ -36,9 +36,9 @@ namespace Controller
     {
       while (true)
       {
-        Console.Write(prompt + " (y/n): ");
+        Console.Write(prompt + " (s/n): ");
         string? input = Console.ReadLine()?.Trim().ToLower();
-        if (input == "y" || input == "yes")
+        if (input == "s" || input == "si")
         {
           return true;
         }
@@ -46,7 +46,7 @@ namespace Controller
         {
           return false;
         }
-        Console.WriteLine("Error: Please enter 'y' or 'n'.\n");
+        Console.WriteLine("Error: Por favor, ingrese 's' o 'n'.\n");
       }
     }
   }
