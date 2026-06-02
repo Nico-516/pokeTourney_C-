@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "name": "Red",
+    "age": 16,
+    "region": "Kanto",
+    "voiceLine": "..."
+  },
+  {
+    "id": 2,
+    "name": "Blue",
+    "age": 16,
+    "region": "Kanto",
+    "voiceLine": "Smell ya later!"
+  },
+  {
+    "id": 3,
+    "name": "Leaf",
+    "age": 16,
+    "region": "Kanto",
+    "voiceLine": "Let's do our best!"
+  },
+  {
+    "id": 4,
+    "name": "Brock",
+    "age": 19,
+    "region": "Kanto",
+    "voiceLine": "My defense is hard as rock!"
+  },
+  {
+    "id": 5,
+    "name": "Misty",
+    "age": 18,
+    "region": "Kanto",
+    "voiceLine": "You can't handle my water-type Pokemon!"
+  },
+  {
+    "id": 6,
+    "name": "Lt. Surge",
+    "age": 35,
+    "region": "Kanto",
+    "voiceLine": "Ten-hut! You're in for a shock!"
+  },
+  {
+    "id": 7,
+    "name": "Erika",
+    "age": 20,
+    "region": "Kanto",
+    "voiceLine": "Nature's beauty is on my side."
+  },
+  {
+    "id": 8,
+    "name": "Koga",
+    "age": 38,
+    "region": "Kanto",
+    "voiceLine": "Fwahahaha! A ninja's trick!"
+  },
+  {
+    "id": 9,
+    "name": "Sabrina",
+    "age": 21,
+    "region": "Kanto",
+    "voiceLine": "I had a feeling you would lose."
+  },
+  {
+    "id": 10,
+    "name": "Blaine",
+    "age": 50,
+    "region": "Kanto",
+    "voiceLine": "You better have Burn Heal!"
+  },
+  {
+    "id": 11,
+    "name": "Giovanni",
+    "age": 42,
+    "region": "Kanto",
+    "voiceLine": "Welcome to my hideout."
+  },
+  {
+    "id": 12,
+    "name": "Ethan",
+    "age": 15,
+    "region": "Johto",
+    "voiceLine": "No one can stop my journey!"
+  },
+  {
+    "id": 13,
+    "name": "Lyra",
+    "age": 15,
+    "region": "Johto",
+    "voiceLine": "Let's see what you've got!"
+  },
+  {
+    "id": 14,
+    "name": "Silver",
+    "age": 16,
+    "region": "Johto",
+    "voiceLine": "Only the strongest trainers survive."
+  },
+  {
+    "id": 15,
+    "name": "Falkner",
+    "age": 18,
+    "region": "Johto",
+    "voiceLine": "The wind is in our favor!"
+  },
+  {
+    "id": 16,
+    "name": "Bugsy",
+    "age": 14,
+    "region": "Johto",
+    "voiceLine": "My bug Pokemon are awesome!"
+  },
+  {
+    "id": 17,
+    "name": "Whitney",
+    "age": 16,
+    "region": "Johto",
+    "voiceLine": "Miltank, use Rollout!"
+  },
+  {
+    "id": 18,
+    "name": "Morty",
+    "age": 25,
+    "region": "Johto",
+    "voiceLine": "I can see the unseen."
+  },
+  {
+    "id": 19,
+    "name": "Jasmine",
+    "age": 19,
+    "region": "Johto",
+    "voiceLine": "Steel yourself!"
+  },
+  {
+    "id": 20,
+    "name": "Chuck",
+    "age": 32,
+    "region": "Johto",
+    "voiceLine": "I train under a waterfall!"
+  },
+  {
+    "id": 21,
+    "name": "Pryce",
+    "age": 62,
+    "region": "Johto",
+    "voiceLine": "Winter is here."
+  },
+  {
+    "id": 22,
+    "name": "Clair",
+    "age": 22,
+    "region": "Johto",
+    "voiceLine": "The dragon's wrath awaits!"
+  },
+  {
+    "id": 23,
+    "name": "Brendan",
+    "age": 15,
+    "region": "Hoenn",
+    "voiceLine": "My dad is the Gym Leader!"
+  },
+  {
+    "id": 24,
+    "name": "May",
+    "age": 15,
+    "region": "Hoenn",
+    "voiceLine": "I love exploring Hoenn!"
+  },
+  {
+    "id": 25,
+    "name": "Wally",
+    "age": 13,
+    "region": "Hoenn",
+    "voiceLine": "I will show you how strong I've become!"
+  },
+  {
+    "id": 26,
+    "name": "Roxanne",
+    "age": 18,
+    "region": "Hoenn",
+    "voiceLine": "Knowledge is power!"
+  },
+  {
+    "id": 27,
+    "name": "Brawly",
+    "age": 20,
+    "region": "Hoenn",
+    "voiceLine": "Ride the wave of battle!"
+  },
+  {
+    "id": 28,
+    "name": "Wattson",
+    "age": 60,
+    "region": "Hoenn",
+    "voiceLine": "Wahahaha! Electrifying!"
+  },
+  {
+    "id": 29,
+    "name": "Flannery",
+    "age": 17,
+    "region": "Hoenn",
+    "voiceLine": "My passion burns hot!"
+  },
+  {
+    "id": 30,
+    "name": "Norman",
+    "age": 36,
+    "region": "Hoenn",
+    "voiceLine": "A father must test his child."
+  },
+  {
+    "id": 31,
+    "name": "Winona",
+    "age": 24,
+    "region": "Hoenn",
+    "voiceLine": "We soar to new heights!"
+  },
+  {
+    "id": 32,
+    "name": "Tate",
+    "age": 12,
+    "region": "Hoenn",
+    "voiceLine": "We fight as one!"
+  },
+  {
+    "id": 33,
+    "name": "Liza",
+    "age": 12,
+    "region": "Hoenn",
+    "voiceLine": "Two minds, one strategy!"
+  },
+  {
+    "id": 34,
+    "name": "Wallace",
+    "age": 28,
+    "region": "Hoenn",
+    "voiceLine": "Behold the elegance of water!"
+  },
+  {
+    "id": 35,
+    "name": "Lucas",
+    "age": 15,
+    "region": "Sinnoh",
+    "voiceLine": "Science will help us win!"
+  },
+  {
+    "id": 36,
+    "name": "Dawn",
+    "age": 15,
+    "region": "Sinnoh",
+    "voiceLine": "No need to worry!"
+  },
+  {
+    "id": 37,
+    "name": "Barry",
+    "age": 15,
+    "region": "Sinnoh",
+    "voiceLine": "I'm gonna fine you if you lose!"
+  },
+  {
+    "id": 38,
+    "name": "Roark",
+    "age": 19,
+    "region": "Sinnoh",
+    "voiceLine": "Let's dig deep!"
+  },
+  {
+    "id": 39,
+    "name": "Gardenia",
+    "age": 21,
+    "region": "Sinnoh",
+    "voiceLine": "Grass types are the cutest!"
+  },
+  {
+    "id": 40,
+    "name": "Maylene",
+    "age": 16,
+    "region": "Sinnoh",
+    "voiceLine": "Focus your energy!"
+  },
+  {
+    "id": 41,
+    "name": "Crasher Wake",
+    "age": 34,
+    "region": "Sinnoh",
+    "voiceLine": "The ring is my home!"
+  },
+  {
+    "id": 42,
+    "name": "Fantina",
+    "age": 29,
+    "region": "Sinnoh",
+    "voiceLine": "Ah, what a beautiful dance!"
+  },
+  {
+    "id": 43,
+    "name": "Byron",
+    "age": 45,
+    "region": "Sinnoh",
+    "voiceLine": "I love bastions!"
+  },
+  {
+    "id": 44,
+    "name": "Candice",
+    "age": 17,
+    "region": "Sinnoh",
+    "voiceLine": "Stay cool in battle!"
+  },
+  {
+    "id": 45,
+    "name": "Volkner",
+    "age": 26,
+    "region": "Sinnoh",
+    "voiceLine": "Spark some excitement!"
+  },
+  {
+    "id": 46,
+    "name": "Cynthia",
+    "age": 28,
+    "region": "Sinnoh",
+    "voiceLine": "Show me the bond you share with your Pokemon."
+  },
+  {
+    "id": 47,
+    "name": "Hilbert",
+    "age": 16,
+    "region": "Unova",
+    "voiceLine": "Truth will guide us."
+  },
+  {
+    "id": 48,
+    "name": "Hilda",
+    "age": 16,
+    "region": "Unova",
+    "voiceLine": "Ideals will pave the way."
+  },
+  {
+    "id": 49,
+    "name": "Cheren",
+    "age": 16,
+    "region": "Unova",
+    "voiceLine": "What is strength, really?"
+  },
+  {
+    "id": 50,
+    "name": "Bianca",
+    "age": 16,
+    "region": "Unova",
+    "voiceLine": "I'm doing things my own way!"
+  },
+  {
+    "id": 51,
+    "name": "Cilan",
+    "age": 18,
+    "region": "Unova",
+    "voiceLine": "It's evaluation time!"
+  },
+  {
+    "id": 52,
+    "name": "Chili",
+    "age": 18,
+    "region": "Unova",
+    "voiceLine": "I'm heating things up!"
+  },
+  {
+    "id": 53,
+    "name": "Cress",
+    "age": 18,
+    "region": "Unova",
+    "voiceLine": "A calm mind brings victory."
+  },
+  {
+    "id": 54,
+    "name": "Lenora",
+    "age": 32,
+    "region": "Unova",
+    "voiceLine": "Let's test your archeology skills!"
+  },
+  {
+    "id": 55,
+    "name": "Burgh",
+    "age": 25,
+    "region": "Unova",
+    "voiceLine": "Art is bug-like!"
+  },
+  {
+    "id": 56,
+    "name": "Elesa",
+    "age": 22,
+    "region": "Unova",
+    "voiceLine": "Shine like a supermodel!"
+  },
+  {
+    "id": 57,
+    "name": "Clay",
+    "age": 40,
+    "region": "Unova",
+    "voiceLine": "Business is business."
+  },
+  {
+    "id": 58,
+    "name": "Skyla",
+    "age": 19,
+    "region": "Unova",
+    "voiceLine": "Ready for takeoff!"
+  },
+  {
+    "id": 59,
+    "name": "Drayden",
+    "age": 55,
+    "region": "Unova",
+    "voiceLine": "Dragons are the ultimate strength."
+  },
+  {
+    "id": 60,
+    "name": "Iris",
+    "age": 14,
+    "region": "Unova",
+    "voiceLine": "I'm the dragon master!"
+  },
+  {
+    "id": 61,
+    "name": "Marlon",
+    "age": 21,
+    "region": "Unova",
+    "voiceLine": "Just go with the flow."
+  },
+  {
+    "id": 62,
+    "name": "Calem",
+    "age": 16,
+    "region": "Kalos",
+    "voiceLine": "I won't let you down."
+  },
+  {
+    "id": 63,
+    "name": "Serena",
+    "age": 16,
+    "region": "Kalos",
+    "voiceLine": "Style and strength!"
+  },
+  {
+    "id": 64,
+    "name": "Shauna",
+    "age": 15,
+    "region": "Kalos",
+    "voiceLine": "Making memories is key!"
+  },
+  {
+    "id": 65,
+    "name": "Tierno",
+    "age": 16,
+    "region": "Kalos",
+    "voiceLine": "Feel the rhythm!"
+  },
+  {
+    "id": 66,
+    "name": "Trevor",
+    "age": 15,
+    "region": "Kalos",
+    "voiceLine": "Let's complete the Pokedex!"
+  },
+  {
+    "id": 67,
+    "name": "Mariano Gomez",
+    "age": 19,
+    "region": "Kalos",
+    "voiceLine": "Thunder cross split attack! ... no, wait, six seven"
+  },
+  {
+    "id": 68,
+    "name": "Grant",
+    "age": 21,
+    "region": "Kalos",
+    "voiceLine": "Scale the wall of victory!"
+  },
+  {
+    "id": 69,
+    "name": "Korrina",
+    "age": 16,
+    "region": "Kalos",
+    "voiceLine": "Mega Evolution, let's go!"
+  },
+  {
+    "id": 70,
+    "name": "Ramos",
+    "age": 65,
+    "region": "Kalos",
+    "voiceLine": "Patience sprouts victory."
+  },
+  {
+    "id": 71,
+    "name": "Clemont",
+    "age": 14,
+    "region": "Kalos",
+    "voiceLine": "The future is now, thanks to science!"
+  },
+  {
+    "id": 72,
+    "name": "Valerie",
+    "age": 23,
+    "region": "Kalos",
+    "voiceLine": "Can you feel the fairy magic?"
+  },
+  {
+    "id": 73,
+    "name": "Olympia",
+    "age": 30,
+    "region": "Kalos",
+    "voiceLine": "The stars have aligned."
+  },
+  {
+    "id": 74,
+    "name": "Wulfric",
+    "age": 48,
+    "region": "Kalos",
+    "voiceLine": "Ice can be tough, yet flexible."
+  },
+  {
+    "id": 75,
+    "name": "Elio",
+    "age": 14,
+    "region": "Alola",
+    "voiceLine": "Alola! Nice to meet you."
+  },
+  {
+    "id": 76,
+    "name": "Selene",
+    "age": 14,
+    "region": "Alola",
+    "voiceLine": "Let's try a Z-Move!"
+  },
+  {
+    "id": 77,
+    "name": "Hau",
+    "age": 14,
+    "region": "Alola",
+    "voiceLine": "Time for some Malasadas!"
+  },
+  {
+    "id": 78,
+    "name": "Gladion",
+    "age": 16,
+    "region": "Alola",
+    "voiceLine": "My partner Type: Null is ready."
+  },
+  {
+    "id": 79,
+    "name": "Lillie",
+    "age": 14,
+    "region": "Alola",
+    "voiceLine": "Nebby, get back in the bag!"
+  },
+  {
+    "id": 80,
+    "name": "Kukui",
+    "age": 30,
+    "region": "Alola",
+    "voiceLine": "Woo! Move like a Pokemon!"
+  },
+  {
+    "id": 81,
+    "name": "Victor",
+    "age": 15,
+    "region": "Galar",
+    "voiceLine": "Dynamax power!"
+  },
+  {
+    "id": 82,
+    "name": "Gloria",
+    "age": 15,
+    "region": "Galar",
+    "voiceLine": "Let's have a brilliant match!"
+  },
+  {
+    "id": 83,
+    "name": "Hop",
+    "age": 15,
+    "region": "Galar",
+    "voiceLine": "I'll become champion like my brother!"
+  },
+  {
+    "id": 84,
+    "name": "Bede",
+    "age": 16,
+    "region": "Galar",
+    "voiceLine": "You lack refinement."
+  },
+  {
+    "id": 85,
+    "name": "Marnie",
+    "age": 15,
+    "region": "Galar",
+    "voiceLine": "We won't lose, right Morpeko?"
+  },
+  {
+    "id": 86,
+    "name": "Milo",
+    "age": 20,
+    "region": "Galar",
+    "voiceLine": "Harvest a win!"
+  },
+  {
+    "id": 87,
+    "name": "Nessa",
+    "age": 21,
+    "region": "Galar",
+    "voiceLine": "Drown in defeat!"
+  },
+  {
+    "id": 88,
+    "name": "Kabu",
+    "age": 40,
+    "region": "Galar",
+    "voiceLine": "Keep the flame burning!"
+  },
+  {
+    "id": 89,
+    "name": "Bea",
+    "age": 18,
+    "region": "Galar",
+    "voiceLine": "One strike is all I need."
+  },
+  {
+    "id": 90,
+    "name": "Allister",
+    "age": 12,
+    "region": "Galar",
+    "voiceLine": "I can see the spirits..."
+  },
+  {
+    "id": 91,
+    "name": "Opal",
+    "age": 88,
+    "region": "Galar",
+    "voiceLine": "Do you have enough pink?"
+  },
+  {
+    "id": 92,
+    "name": "Gordie",
+    "age": 21,
+    "region": "Galar",
+    "voiceLine": "Rock on!"
+  },
+  {
+    "id": 93,
+    "name": "Melony",
+    "age": 42,
+    "region": "Galar",
+    "voiceLine": "Ice cold precision."
+  },
+  {
+    "id": 94,
+    "name": "Piers",
+    "age": 23,
+    "region": "Galar",
+    "voiceLine": "Listen to my song!"
+  },
+  {
+    "id": 95,
+    "name": "Raihan",
+    "age": 22,
+    "region": "Galar",
+    "voiceLine": "Selfie time before we battle!"
+  },
+  {
+    "id": 96,
+    "name": "Leon",
+    "age": 25,
+    "region": "Galar",
+    "voiceLine": "Let's have a champion time!"
+  },
+  {
+    "id": 97,
+    "name": "Florian",
+    "age": 14,
+    "region": "Paldea",
+    "voiceLine": "Terastal energy!"
+  },
+  {
+    "id": 98,
+    "name": "Juliana",
+    "age": 14,
+    "region": "Paldea",
+    "voiceLine": "Let's explore Paldea!"
+  },
+  {
+    "id": 99,
+    "name": "Nemona",
+    "age": 16,
+    "region": "Paldea",
+    "voiceLine": "Let's battle! Again and again!"
+  },
+  {
+    "id": 100,
+    "name": "Arven",
+    "age": 17,
+    "region": "Paldea",
+    "voiceLine": "My cooking will heal them!"
+  }
+]
