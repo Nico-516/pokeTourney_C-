@@ -1,7 +1,5 @@
 using Model;
-using Model.Interfaces;
-using System.Collections.Generic;
-using Controller.JsonGetters;
+using Controller.Repository;
 
 namespace Controller
 {
@@ -9,10 +7,10 @@ namespace Controller
   {
     private static Random rnd = new Random();
 
-    public static List<Trainer> Create16DummyTrainers()
+    public static List<Trainer> Create16DummyTrainers(IRepository<Trainer> repoTrainers, IRepository<Pokemon> repoPokemons, IRepository<Gym> repoGyms)
     {
       List<Trainer> selectedTrainers = new List<Trainer>();
-      List<Trainer> dummyTrainers = GetDummyTrainer.GetDummyTrainersFromJSON();
+      List<Trainer> dummyTrainers = repoTrainers.LeerTodos();
 
       do{
         int rndTrainerIndex = rnd.Next(dummyTrainers.Count);
@@ -22,8 +20,8 @@ namespace Controller
           continue;
         }
 
-        newTrainer._pokemonTeam = GeneratePokemonTeam();
-        newTrainer._gym = AssignGym();
+        newTrainer._pokemonTeam = GeneratePokemonTeam(repoPokemons);
+        newTrainer._gym = AssignGym(repoGyms);
 
         selectedTrainers.Add(newTrainer);
         
@@ -32,9 +30,9 @@ namespace Controller
       return selectedTrainers;
     }
 
-    public static List<Pokemon> GeneratePokemonTeam(){
+    public static List<Pokemon> GeneratePokemonTeam( IRepository<Pokemon> repoPokemons){
       List<Pokemon> pokemonTeam = new List<Pokemon>();
-      List<Pokemon> allPokemon = GetPokemons.GetPokemonsFromJSON();
+      List<Pokemon> allPokemon = repoPokemons.LeerTodos();
 
       do {
         int rndPokemonIndex = rnd.Next(allPokemon.Count);
@@ -51,8 +49,8 @@ namespace Controller
       return pokemonTeam;
     }
 
-    public static Gym AssignGym(){
-      List<Gym> allGyms = GetGyms.GetGymsFromJSON();
+    public static Gym AssignGym(IRepository<Gym> repoGyms){
+      List<Gym> allGyms = repoGyms.LeerTodos();
       int rndGymIndex = rnd.Next(allGyms.Count);
       Gym newGym = allGyms[rndGymIndex];
       return newGym;

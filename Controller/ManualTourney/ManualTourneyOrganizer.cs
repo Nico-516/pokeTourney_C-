@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using Model;
 using Controller;
 using View;
+using Controller.Repository;
 
 namespace Controller
 {
   public static class ManualTourneyOrganizer
   {
-    public static void CreateAndRunManualTourney()
+    public static void CreateAndRunManualTourney(IRepository<Trainer> repoTrainers, IRepository<Pokemon> repoPokemons, IRepository<Gym> repoGyms, IRepository<string> repoRegions)
     {
 
       TourneyView.RenderCreationHeader();
@@ -17,7 +18,7 @@ namespace Controller
       Console.WriteLine();
 
       
-      List<Trainer> trainers = ManualTrainerCreator.Create16Trainers();
+      List<Trainer> trainers = ManualTrainerCreator.Create16Trainers(repoTrainers, repoPokemons, repoGyms, repoRegions);
 
       
       Tourney tourney = new Tourney(tourneyName);

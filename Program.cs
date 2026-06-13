@@ -1,10 +1,17 @@
 using System;
 using Controller;
-using Controller.JsonGetters;
 using Model;
 using View;
+using Controller.Repository;
+
 
 bool running = true;
+
+IRepository<Pokemon> repoPokemons = new JsonRepository<Pokemon>("PokemonLibrary.json");
+IRepository<Gym> repoGyms = new JsonRepository<Gym>("GymLibrary.json");
+IRepository<Trainer> repoTrainers = new JsonRepository<Trainer>("DummyTrainerLibrary.json");
+IRepository<string> repoRegions = new JsonRepository<string>("RegionLibrary.json");
+
 while (running)
 {
     MenuView.RenderWelcome();
@@ -15,16 +22,16 @@ while (running)
 
     if (choice == 1)
     {
-        Tourney tourney = CreateTourney.CreateNewTourneyWith16Trainers("SuperUltraTourney");
+        Tourney tourney = CreateTourney.CreateNewTourneyWith16Trainers("SuperUltraTourney", repoTrainers, repoPokemons, repoGyms);
         ManageTourney.TourneyManager(tourney);
     }
     else if (choice == 2)
     {
-        ManualTourneyOrganizer.CreateAndRunManualTourney();
+        ManualTourneyOrganizer.CreateAndRunManualTourney(repoTrainers, repoPokemons, repoGyms, repoRegions);
     }
     else if (choice == 3)
     {
-        ShowListsMenu();
+        ShowListsMenu(  repoPokemons, repoGyms, repoTrainers);
     }
     else
     {
@@ -33,7 +40,7 @@ while (running)
     }
 }
 
-static void ShowListsMenu()
+static void ShowListsMenu(IRepository<Pokemon> repoPokemons, IRepository<Gym> repoGyms, IRepository<Trainer> repoTrainers)
 {
     bool inLists = true;
     while (inLists)
@@ -44,17 +51,17 @@ static void ShowListsMenu()
 
         if (choice == 1)
         {
-            var pokemons = GetPokemons.GetPokemonsFromJSON();
+            var pokemons = repoPokemons.LeerTodos();
             ListsView.RenderPokemons(pokemons);
         }
         else if (choice == 2)
         {
-            var gyms = GetGyms.GetGymsFromJSON();
+            var gyms = repoGyms.LeerTodos();
             ListsView.RenderGyms(gyms);
         }
         else if (choice == 3)
         {
-            var trainers = GetDummyTrainer.GetDummyTrainersFromJSON();
+            var trainers = repoTrainers.LeerTodos();
             ListsView.RenderTrainers(trainers);
         }
         else

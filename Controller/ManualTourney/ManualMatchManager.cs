@@ -16,6 +16,6 @@ namespace Controller.ManualTourney
 
         MatchView.RenderMatchResult(match);        
         
-       }
+        }
     }
 }

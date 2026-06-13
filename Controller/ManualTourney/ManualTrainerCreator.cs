@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Model;
 using Controller;
-using Controller.JsonGetters;
 using View;
+using Controller.Repository;
 
 namespace Controller
 {
@@ -12,7 +12,7 @@ namespace Controller
   {
     private static Random rnd = new Random();
 
-    public static List<Trainer> Create16Trainers(){
+    public static List<Trainer> Create16Trainers(IRepository<Trainer> repoTrainers, IRepository<Pokemon> repoPokemons, IRepository<Gym> repoGyms, IRepository<string> repoRegions){
       List<Trainer> trainers = new List<Trainer>();
 
       TourneyView.RenderTrainerSetupHeader();
@@ -24,19 +24,19 @@ namespace Controller
       for (int i = 1; i <= manualCount; i++)
       {
         TourneyView.RenderTrainerCreating(i, manualCount);
-        Trainer trainer = CreateSingleTrainer(i);
+        Trainer trainer = CreateSingleTrainer(i, repoTrainers, repoPokemons, repoGyms, repoRegions);
         trainers.Add(trainer);
         TourneyView.RenderTrainerCreated(trainer._name);
-       }
+      }
 
       if (manualCount < 16)
       {
         int remaining = 16 - manualCount;
         TourneyView.RenderDummiesGenerating(remaining);
 
-        List<Trainer> dummyTrainers = GetDummyTrainer.GetDummyTrainersFromJSON();
-        List<Gym> gyms = GetGyms.GetGymsFromJSON();
-        List<Pokemon> pokemons = GetPokemons.GetPokemonsFromJSON();
+        List<Trainer> dummyTrainers = repoTrainers.LeerTodos();
+        List<Gym> gyms = repoGyms.LeerTodos();
+        List<Pokemon> pokemons = repoPokemons.LeerTodos();
 
         int added = 0;
         while (added < remaining)
@@ -73,13 +73,13 @@ namespace Controller
       return trainers;
     }
 
-    public static Trainer CreateSingleTrainer(int index)
+    public static Trainer CreateSingleTrainer(int index, IRepository<Trainer> repoTrainers, IRepository<Pokemon> repoPokemons, IRepository<Gym> repoGyms, IRepository<string> repoRegions)
     {
       string name = InputValidator.ReadNonEmptyString("Ingresa el nombre del entrenador: ");
       int age = InputValidator.ReadInteger("Ingresa la edad del entrenador: ", 5, 120);
 
       
-      List<string> regions = GetRegions.GetRegionsFromJSON();
+      List<string> regions = repoRegions.LeerTodos();
       Console.WriteLine("\nRegiones disponibles:");
       for (int i = 0; i < regions.Count; i++)
       {
@@ -91,7 +91,7 @@ namespace Controller
       string voiceLine = InputValidator.ReadNonEmptyString("Ingresa la frase característica del entrenador: ");
 
       
-      List<Gym> gyms = GetGyms.GetGymsFromJSON();
+      List<Gym> gyms = repoGyms.LeerTodos();
       Console.WriteLine("\nGimnasios disponibles:");
       for (int i = 0; i < gyms.Count; i++)
       {
@@ -101,7 +101,7 @@ namespace Controller
       Gym selectedGym = gyms[gymIndex - 1];
 
       
-      List<Pokemon> allPokemons = GetPokemons.GetPokemonsFromJSON();
+      List<Pokemon> allPokemons = repoPokemons.LeerTodos();
       List<Pokemon> team = new List<Pokemon>();
       Console.WriteLine("\nSelecciona los Pokémon para tu equipo (hasta 6 Pokémon). Ingresa el ID del Pokémon (1-100).");
 

@@ -1,15 +1,13 @@
 using Model;
-using Model.Interfaces;
-using System.Collections.Generic;
-using Controller.JsonGetters;
+using Controller.Repository;
 
 namespace Controller{
   
   public static class CreateTourney{
 
-    public static Tourney CreateNewTourneyWith16Trainers(string name){
+    public static Tourney CreateNewTourneyWith16Trainers(string name, IRepository<Trainer> repoTrainers, IRepository<Pokemon> repoPokemons, IRepository<Gym> repoGyms){
       Tourney pokemonTourney = new Tourney(name);
-      List<Trainer> dummyTrainers = CreateTrainer.Create16DummyTrainers();
+      List<Trainer> dummyTrainers = CreateTrainer.Create16DummyTrainers(repoTrainers, repoPokemons, repoGyms);
       pokemonTourney._trainers = dummyTrainers;
       pokemonTourney._rounds = CreateRound.CreateRounds(pokemonTourney);
       
