@@ -31,12 +31,10 @@ namespace   Controller.Repository
             }
 
             if (string.IsNullOrEmpty(jsonPath))
-                throw new FileNotFoundException($"No se encontró {_rutaArchivo}");
+                return new List<T>();
             
             string jsonString = File.ReadAllText(jsonPath);
-
             List<T>? resultado = JsonSerializer.Deserialize<List<T>>(jsonString);
-
             return resultado ?? new List<T>();
 
         }

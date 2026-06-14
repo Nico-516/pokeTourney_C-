@@ -30,17 +30,21 @@ while (running)
         repoTourneys.GuardarTodos(torneos);
     }
     else if (choice == 2)
-{
+    {
     Tourney tourney = ManualTourneyOrganizer.CreateAndRunManualTourney(repoTrainers, repoPokemons, repoGyms, repoRegions);
     List<Tourney> torneos = repoTourneys.LeerTodos();
     torneos.Add(tourney);
     repoTourneys.GuardarTodos(torneos);
-}
+    }
     else if (choice == 3)
     {
         ShowListsMenu(  repoPokemons, repoGyms, repoTrainers, repoTourneys);
     }
-    else
+    else if (choice == 4)
+    {
+        ShowSavedTourneys(repoTourneys);
+    }
+    else if (choice == 5)
     {
         MenuView.RenderGoodbye();
         running = false;
@@ -76,7 +80,7 @@ static void ShowListsMenu(IRepository<Pokemon> repoPokemons, IRepository<Gym> re
         {
             ShowSavedTourneys(repoTourneys);
         }
-        else
+        else if (choice == 5)
         {
             inLists = false;
         }

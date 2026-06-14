@@ -16,5 +16,12 @@ namespace Model
       this._rounds = new List<Round>();
       this._creationDate = DateTime.Now;
     }
+
+    public Tourney() 
+    { 
+        _name = string.Empty;
+        _trainers = new List<Trainer>(); 
+        _rounds = new List<Round>(); 
+    }
   }
 }

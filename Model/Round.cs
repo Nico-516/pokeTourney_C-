@@ -12,5 +12,11 @@ namespace Model
       this._trainers = new List<Trainer>();
       this._matches = new List<Match>();
     }
+    public Round() 
+    { 
+        _name = string.Empty;
+        _trainers = new List<Trainer>(); 
+        _matches = new List<Match>(); 
+    }
   }
 }

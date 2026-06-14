@@ -14,5 +14,13 @@ namespace Model
       this._trainer2 = trainer2;
       this._winner = null;
     }
+    public Match() 
+    { 
+        _name = string.Empty;
+        _trainer1 = new Trainer();
+        _trainer2 = new Trainer();
+        _winner = null;
+    }
+
   }
 }
