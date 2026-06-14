@@ -56,5 +56,23 @@ namespace View
 			Console.ResetColor();
 			Console.WriteLine();
 		}
+
+		public static void RenderSavedTourneys(List<Tourney> tourneys)
+		{
+			Console.ForegroundColor = ConsoleColor.DarkGray;
+			Console.WriteLine("  ────────────────────────────────────────────────────────────────────────────────");
+			Console.WriteLine($"  {"Nombre del torneo",-30} {"Fecha de creación",-25} {"Ganador",-20}");
+			Console.WriteLine("  ────────────────────────────────────────────────────────────────────────────────");
+			Console.ResetColor();
+			foreach (var t in tourneys)
+			{
+				string winner = t._rounds.Count > 0 ? t._rounds[^1]._matches[0]._winner?._name ?? "N/A" : "N/A";
+				Console.WriteLine($"  {t._name,-30} {t._creationDate.ToString("g"),-25} {winner,-20}");
+			}
+			Console.ForegroundColor = ConsoleColor.DarkGray;
+			Console.WriteLine("  ────────────────────────────────────────────────────────────────────────────────");
+			Console.ResetColor();
+			Console.WriteLine();
+		}
 	}
 }

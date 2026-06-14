@@ -23,7 +23,8 @@ namespace View
             Console.WriteLine("    1.  Torneo simulado         (Auto-run)");
             Console.WriteLine("    2.  Torneo manual           (Elegir ganadores)");
             Console.WriteLine("    3.  Ver listas              (Pokémon, Gimnasios, Entrenadores)");
-            Console.WriteLine("    4.  Salir");
+            Console.WriteLine("    4.  Ver historial de torneos guardados");
+            Console.WriteLine("    5.  Salir");
             Console.WriteLine();
         }
 
@@ -35,7 +36,8 @@ namespace View
             Console.WriteLine("    1.  Pokémon   (IDs 1-100 & Stats)");
             Console.WriteLine("    2.  Gimnasios");
             Console.WriteLine("    3.  Entrenadores");
-            Console.WriteLine("    4.  Volver al menú principal");
+            Console.WriteLine("    4.  Torneos guardados");
+            Console.WriteLine("    5.  Volver al menú principal");
             Console.WriteLine();
         }
 

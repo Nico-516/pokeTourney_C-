@@ -11,27 +11,34 @@ IRepository<Pokemon> repoPokemons = new JsonRepository<Pokemon>("PokemonLibrary.
 IRepository<Gym> repoGyms = new JsonRepository<Gym>("GymLibrary.json");
 IRepository<Trainer> repoTrainers = new JsonRepository<Trainer>("DummyTrainerLibrary.json");
 IRepository<string> repoRegions = new JsonRepository<string>("RegionLibrary.json");
+IRepository<Tourney> repoTourneys = new JsonRepository<Tourney>("SavedTourneys.json");
 
 while (running)
 {
     MenuView.RenderWelcome();
     MenuView.RenderMainMenu();
 
-    int choice = InputValidator.ReadInteger("  Seleccionar una opción (1-4): ", 1, 4);
+    int choice = InputValidator.ReadInteger("  Seleccionar una opción (1-5): ", 1, 5);
     Console.WriteLine();
 
     if (choice == 1)
     {
         Tourney tourney = CreateTourney.CreateNewTourneyWith16Trainers("SuperUltraTourney", repoTrainers, repoPokemons, repoGyms);
         ManageTourney.TourneyManager(tourney);
+        List<Tourney> torneos = repoTourneys.LeerTodos();
+        torneos.Add(tourney);
+        repoTourneys.GuardarTodos(torneos);
     }
     else if (choice == 2)
-    {
-        ManualTourneyOrganizer.CreateAndRunManualTourney(repoTrainers, repoPokemons, repoGyms, repoRegions);
-    }
+{
+    Tourney tourney = ManualTourneyOrganizer.CreateAndRunManualTourney(repoTrainers, repoPokemons, repoGyms, repoRegions);
+    List<Tourney> torneos = repoTourneys.LeerTodos();
+    torneos.Add(tourney);
+    repoTourneys.GuardarTodos(torneos);
+}
     else if (choice == 3)
     {
-        ShowListsMenu(  repoPokemons, repoGyms, repoTrainers);
+        ShowListsMenu(  repoPokemons, repoGyms, repoTrainers, repoTourneys);
     }
     else
     {
@@ -40,13 +47,13 @@ while (running)
     }
 }
 
-static void ShowListsMenu(IRepository<Pokemon> repoPokemons, IRepository<Gym> repoGyms, IRepository<Trainer> repoTrainers)
+static void ShowListsMenu(IRepository<Pokemon> repoPokemons, IRepository<Gym> repoGyms, IRepository<Trainer> repoTrainers, IRepository<Tourney> repoTourneys)
 {
     bool inLists = true;
     while (inLists)
     {
         MenuView.RenderListsMenu();
-        int choice = InputValidator.ReadInteger("  Seleccionar una opción (1-4): ", 1, 4);
+        int choice = InputValidator.ReadInteger("  Seleccionar una opción (1-5): ", 1, 5);
         Console.WriteLine();
 
         if (choice == 1)
@@ -64,9 +71,20 @@ static void ShowListsMenu(IRepository<Pokemon> repoPokemons, IRepository<Gym> re
             var trainers = repoTrainers.LeerTodos();
             ListsView.RenderTrainers(trainers);
         }
+
+        else if (choice == 4)
+        {
+            ShowSavedTourneys(repoTourneys);
+        }
         else
         {
             inLists = false;
         }
     }
+}
+
+static void ShowSavedTourneys(IRepository<Tourney> repoTourneys)
+{
+    var tourneys = repoTourneys.LeerTodos();
+    ListsView.RenderSavedTourneys(tourneys);
 }
