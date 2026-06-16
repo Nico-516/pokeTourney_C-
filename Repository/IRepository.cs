@@ -4,7 +4,7 @@ using System.IO;
 using System.Text.Json;
 using Model;
 
-namespace   Controller.Repository
+namespace Repository
 {
     public interface IRepository<T>
     {

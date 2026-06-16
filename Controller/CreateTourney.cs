@@ -1,5 +1,5 @@
 using Model;
-using Controller.Repository;
+using Repository;
 
 namespace Controller{
   

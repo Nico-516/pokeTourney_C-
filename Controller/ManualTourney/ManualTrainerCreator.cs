@@ -4,7 +4,7 @@ using System.Linq;
 using Model;
 using Controller;
 using View;
-using Controller.Repository;
+using Repository;
 
 namespace Controller
 {

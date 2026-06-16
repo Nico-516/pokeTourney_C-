@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Model;
 using Controller;
 using View;
-using Controller.Repository;
+using Repository;
 
 namespace Controller
 {
