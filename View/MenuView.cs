@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace View
 {
@@ -24,7 +24,8 @@ namespace View
             Console.WriteLine("    2.  Torneo manual           (Elegir ganadores)");
             Console.WriteLine("    3.  Ver listas              (Pokémon, Gimnasios, Entrenadores)");
             Console.WriteLine("    4.  Ver historial de torneos guardados");
-            Console.WriteLine("    5.  Salir");
+            Console.WriteLine("    5.  Administrar Entrenadores (CRUD)");
+            Console.WriteLine("    6.  Salir");
             Console.WriteLine();
         }
 

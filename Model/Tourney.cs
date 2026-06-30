@@ -1,9 +1,13 @@
 using System; 
+using System.Text.Json.Serialization;
+using Model.Interfaces;
 
 namespace Model
 {
-  public class Tourney
+  public class Tourney : IEntity
   {
+    [JsonPropertyName("id")]
+    public int Id { get; set; }
     public string _name { get; set; }
     public List<Trainer> _trainers { get; set; }
     public List<Round> _rounds { get; set; }

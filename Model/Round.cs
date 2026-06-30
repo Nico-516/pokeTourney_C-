@@ -1,7 +1,13 @@
+using System.Text.Json.Serialization;
+using Model.Interfaces;
+
 namespace Model
 {
-  public class Round
+  public class Round : IEntity
   {
+    [JsonPropertyName("id")]
+    public int Id { get; set; }
+
     public string _name { get; set; }
     public List<Trainer> _trainers { get; set; }
     public List<Match> _matches { get; set; }

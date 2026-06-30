@@ -4,11 +4,8 @@ using Model.Interfaces;
 
 namespace Model
 {
-  public class Trainer : Person, IMakeNoise, IParticipantBadge
+  public class Trainer : Person, IMakeNoise
   {
-    [JsonPropertyName("id")]
-    public int _id { get; set; }
-
     [JsonPropertyName("region")]
     public string _region { get; set; } = string.Empty;
 

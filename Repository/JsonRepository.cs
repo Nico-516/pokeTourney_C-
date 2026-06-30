@@ -2,10 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Text.Json;
 using System.IO;
+using System.Linq;
+using Model.Interfaces;
 
 namespace Repository
 {
-    public class JsonRepository<T> : IRepository<T>
+    public class JsonRepository<T> : IRepository<T> where T : IEntity
     {
         private string _rutaArchivo;
 
@@ -42,7 +44,7 @@ namespace Repository
             }
         }
 
-        public List<T> LeerTodos()
+        public List<T> GetAll()
         {
             if (!File.Exists(_rutaArchivo))
                 return new List<T>();
@@ -52,7 +54,7 @@ namespace Repository
             return resultado ?? new List<T>();
         }
 
-        public void GuardarTodos(List<T> items)
+        private void Save(List<T> items)
         {
             var opts = new JsonSerializerOptions { WriteIndented = true };
             var json = JsonSerializer.Serialize(items, opts);
@@ -65,6 +67,37 @@ namespace Repository
             }
             
             File.WriteAllText(_rutaArchivo, json);
+        }
+
+        public T? GetById(int id)
+        {
+            return GetAll().FirstOrDefault(e => e.Id == id);
+        }
+
+        public void Add(T item)
+        {
+            var items = GetAll();
+            item.Id = items.Count > 0 ? items.Max(e => e.Id) + 1 : 1;
+            items.Add(item);
+            Save(items);
+        }
+
+        public void Update(T item)
+        {
+            var items = GetAll();
+            int idx = items.FindIndex(e => e.Id == item.Id);
+            if (idx >= 0)
+            {
+                items[idx] = item;
+            }
+            Save(items);
+        }
+
+        public void Delete(int id)
+        {
+            var items = GetAll();
+            items.RemoveAll(e => e.Id == id);
+            Save(items);
         }
     }
 }

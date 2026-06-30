@@ -10,7 +10,7 @@ namespace Controller
     public static List<Trainer> Create16DummyTrainers(IRepository<Trainer> repoTrainers, IRepository<Pokemon> repoPokemons, IRepository<Gym> repoGyms)
     {
       List<Trainer> selectedTrainers = new List<Trainer>();
-      List<Trainer> dummyTrainers = repoTrainers.LeerTodos();
+      List<Trainer> dummyTrainers = repoTrainers.GetAll();
 
       do{
         int rndTrainerIndex = rnd.Next(dummyTrainers.Count);
@@ -32,7 +32,7 @@ namespace Controller
 
     public static List<Pokemon> GeneratePokemonTeam( IRepository<Pokemon> repoPokemons){
       List<Pokemon> pokemonTeam = new List<Pokemon>();
-      List<Pokemon> allPokemon = repoPokemons.LeerTodos();
+      List<Pokemon> allPokemon = repoPokemons.GetAll();
 
       do {
         int rndPokemonIndex = rnd.Next(allPokemon.Count);
@@ -50,7 +50,7 @@ namespace Controller
     }
 
     public static Gym AssignGym(IRepository<Gym> repoGyms){
-      List<Gym> allGyms = repoGyms.LeerTodos();
+      List<Gym> allGyms = repoGyms.GetAll();
       int rndGymIndex = rnd.Next(allGyms.Count);
       Gym newGym = allGyms[rndGymIndex];
       return newGym;

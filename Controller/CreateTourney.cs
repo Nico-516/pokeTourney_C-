@@ -24,7 +24,7 @@ namespace Controller{
         return;
       }
       foreach (Trainer trainer in dummyTrainerList) {
-        Console.WriteLine($"Entrenador: {trainer._name}, Id: {trainer._id}, Gimnasio: {trainer._gym?._name ?? "Sin Gimnasio"}, Pokemon: {string.Join(", ", trainer._pokemonTeam.Select(pokemon => pokemon._name))}");
+        Console.WriteLine($"Entrenador: {trainer._name}, Id: {trainer.Id}, Gimnasio: {trainer._gym?._name ?? "Sin Gimnasio"}, Pokemon: {string.Join(", ", trainer._pokemonTeam.Select(pokemon => pokemon._name))}");
       }
     }
   }

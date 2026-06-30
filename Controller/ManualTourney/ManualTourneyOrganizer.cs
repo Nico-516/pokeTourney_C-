@@ -9,7 +9,7 @@ namespace Controller
 {
   public static class ManualTourneyOrganizer
   {
-    public static Tourney CreateAndRunManualTourney(IRepository<Trainer> repoTrainers, IRepository<Pokemon> repoPokemons, IRepository<Gym> repoGyms, IRepository<string> repoRegions)
+    public static Tourney CreateAndRunManualTourney(IRepository<Trainer> repoTrainers, IRepository<Pokemon> repoPokemons, IRepository<Gym> repoGyms, IRepository<Region> repoRegions)
     {
 
       TourneyView.RenderCreationHeader();

@@ -1,7 +1,13 @@
+using System.Text.Json.Serialization;
+using Model.Interfaces;
+
 namespace Model
 {
-  public class Match
+  public class Match : IEntity
   {
+    [JsonPropertyName("id")]
+    public int Id { get; set; }
+
     public string _name { get; set; }
     public Trainer _trainer1 { get; set; }
     public Trainer _trainer2 { get; set; }

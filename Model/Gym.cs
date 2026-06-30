@@ -1,9 +1,13 @@
 using System.Text.Json.Serialization;
+using Model.Interfaces;
 
 namespace Model
 {
-  public class Gym
+  public class Gym : IEntity
   {
+    [JsonPropertyName("id")]
+    public int Id { get; set; }
+
     [JsonPropertyName("name")]
     public string _name { get; set; } = string.Empty;
 

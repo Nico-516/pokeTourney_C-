@@ -1,4 +1,4 @@
-﻿using Model;
+using Model;
 using System;
 using System.Collections.Generic;
 
@@ -15,7 +15,7 @@ namespace View
 			Console.ResetColor();
 			foreach (var p in pokemons)
 			{
-				Console.WriteLine($"  {p._id,-5} {p._name,-15} {p._healthPoints,-5} {p._attackPoints,-7} {p._defencePoints,-8} {string.Join(", ", p._type),-20}");
+				Console.WriteLine($"  {p.Id,-5} {p._name,-15} {p._healthPoints,-5} {p._attackPoints,-7} {p._defencePoints,-8} {string.Join(", ", p._type),-20}");
 			}
 			Console.ForegroundColor = ConsoleColor.DarkGray;
 			Console.WriteLine("  ────────────────────────────────────────────────────────────────────────────────");
@@ -49,7 +49,7 @@ namespace View
 			Console.ResetColor();
 			foreach (var t in trainers)
 			{
-				Console.WriteLine($"  {t._id,-5} {t._name,-15} {t._age,-5} {t._region,-12} {t._voiceLine,-50}");
+				Console.WriteLine($"  {t.Id,-5} {t._name,-15} {t._age,-5} {t._region,-12} {t._voiceLine,-50}");
 			}
 			Console.ForegroundColor = ConsoleColor.DarkGray;
 			Console.WriteLine("  ──────────────────────────────────────────────────────────────────────────────────────────────");

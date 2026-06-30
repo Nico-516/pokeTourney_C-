@@ -12,9 +12,10 @@ namespace Controller
   {
     private static Random rnd = new Random();
 
-    public static List<Trainer> Create16Trainers(IRepository<Trainer> repoTrainers, IRepository<Pokemon> repoPokemons, IRepository<Gym> repoGyms, IRepository<string> repoRegions){
+    public static List<Trainer> Create16Trainers(IRepository<Trainer> repoTrainers, IRepository<Pokemon> repoPokemons, IRepository<Gym> repoGyms, IRepository<Region> repoRegions){
       List<Trainer> trainers = new List<Trainer>();
 
+      Console.Clear();
       TourneyView.RenderTrainerSetupHeader();
 
 
@@ -23,6 +24,7 @@ namespace Controller
 
       for (int i = 1; i <= manualCount; i++)
       {
+        Console.Clear();
         TourneyView.RenderTrainerCreating(i, manualCount);
         Trainer trainer = CreateSingleTrainer(i, repoTrainers, repoPokemons, repoGyms, repoRegions);
         trainers.Add(trainer);
@@ -34,9 +36,9 @@ namespace Controller
         int remaining = 16 - manualCount;
         TourneyView.RenderDummiesGenerating(remaining);
 
-        List<Trainer> dummyTrainers = repoTrainers.LeerTodos();
-        List<Gym> gyms = repoGyms.LeerTodos();
-        List<Pokemon> pokemons = repoPokemons.LeerTodos();
+        List<Trainer> dummyTrainers = repoTrainers.GetAll();
+        List<Gym> gyms = repoGyms.GetAll();
+        List<Pokemon> pokemons = repoPokemons.GetAll();
 
         int added = 0;
         while (added < remaining)
@@ -45,7 +47,7 @@ namespace Controller
           Trainer dummy = dummyTrainers[rndIndex];
 
           
-          if (trainers.Any(t => t._id == dummy._id || t._name == dummy._name))
+          if (trainers.Any(t => t.Id == dummy.Id || t._name == dummy._name))
           {
             continue;
           }
@@ -57,7 +59,7 @@ namespace Controller
           while (team.Count < 6)
           {
             Pokemon p = pokemons[rnd.Next(pokemons.Count)];
-            if (!team.Any(poke => poke._id == p._id))
+            if (!team.Any(poke => poke.Id == p.Id))
             {
               team.Add(new Pokemon(p));
             }
@@ -73,25 +75,25 @@ namespace Controller
       return trainers;
     }
 
-    public static Trainer CreateSingleTrainer(int index, IRepository<Trainer> repoTrainers, IRepository<Pokemon> repoPokemons, IRepository<Gym> repoGyms, IRepository<string> repoRegions)
+    public static Trainer CreateSingleTrainer(int index, IRepository<Trainer> repoTrainers, IRepository<Pokemon> repoPokemons, IRepository<Gym> repoGyms, IRepository<Region> repoRegions)
     {
       string name = InputValidator.ReadNonEmptyString("Ingresa el nombre del entrenador: ");
       int age = InputValidator.ReadInteger("Ingresa la edad del entrenador: ", 5, 120);
 
       
-      List<string> regions = repoRegions.LeerTodos();
+      List<Region> regions = repoRegions.GetAll();
       Console.WriteLine("\nRegiones disponibles:");
       for (int i = 0; i < regions.Count; i++)
       {
-        Console.WriteLine($"  [{i + 1}] {regions[i]}");
+        Console.WriteLine($"  [{i + 1}] {regions[i].Name}");
       }
       int regionIndex = InputValidator.ReadInteger($"Selecciona una región (1-{regions.Count}): ", 1, regions.Count);
-      string selectedRegion = regions[regionIndex - 1];
+      string selectedRegion = regions[regionIndex - 1].Name;
 
       string voiceLine = InputValidator.ReadNonEmptyString("Ingresa la frase característica del entrenador: ");
 
       
-      List<Gym> gyms = repoGyms.LeerTodos();
+      List<Gym> gyms = repoGyms.GetAll();
       Console.WriteLine("\nGimnasios disponibles:");
       for (int i = 0; i < gyms.Count; i++)
       {
@@ -101,14 +103,15 @@ namespace Controller
       Gym selectedGym = gyms[gymIndex - 1];
 
       
-      List<Pokemon> allPokemons = repoPokemons.LeerTodos();
+      List<Pokemon> allPokemons = repoPokemons.GetAll();
+      ListsView.RenderPokemons(allPokemons);
       List<Pokemon> team = new List<Pokemon>();
       Console.WriteLine("\nSelecciona los Pokémon para tu equipo (hasta 6 Pokémon). Ingresa el ID del Pokémon (1-100).");
 
       while (team.Count < 6)
       {
         int pokeId = InputValidator.ReadInteger($"Ingresa el ID del Pokémon #{team.Count + 1}: ", 1, 100);
-        Pokemon? selectedPoke = allPokemons.FirstOrDefault(p => p._id == pokeId);
+        Pokemon? selectedPoke = allPokemons.FirstOrDefault(p => p.Id == pokeId);
 
         if (selectedPoke == null)
         {
@@ -116,7 +119,7 @@ namespace Controller
           continue;
         }
 
-        if (team.Any(p => p._id == pokeId))
+        if (team.Any(p => p.Id == pokeId))
         {
           Console.WriteLine($"Error: {selectedPoke._name} ya está en el equipo. Selecciona otro Pokémon.");
           continue;
@@ -136,7 +139,7 @@ namespace Controller
       }
 
       Trainer newTrainer = new Trainer(name, age, selectedRegion, voiceLine);
-      newTrainer._id = 1000 + index;
+      newTrainer.Id = 1000 + index;
       newTrainer._gym = selectedGym;
       newTrainer._pokemonTeam = team;
 

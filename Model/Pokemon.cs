@@ -4,10 +4,10 @@ using Model.Interfaces;
 
 namespace Model
 {
-  public class Pokemon : IMakeNoise
+  public class Pokemon : IMakeNoise, IEntity
   {
     [JsonPropertyName("id")]
-    public int _id { get; set; }
+    public int Id { get; set; }
 
     [JsonPropertyName("name")]
     public string _name { get; set; } = string.Empty;
@@ -49,7 +49,7 @@ namespace Model
 
     public Pokemon(Pokemon other)
     {
-      _id = other._id;
+      Id = other.Id;
       _name = other._name;
       _type = new List<string>(other._type);
       _attackPoints = other._attackPoints;
